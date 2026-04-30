@@ -1,0 +1,803 @@
+fecha_deteccion,fecha_timeout,operador,proceso,codigo,descripcion,rango_consulta,time_taken_ms,status,status_code
+2026-04-30 10:59:52,2026-04-30 10:10:48,CLARO,Activación Servicios,TIMEOUT_35423ms,"Timeout: 35,423ms",now-1h,35423,,
+2026-04-30 09:26:22,2026-04-30 08:33:30,CLARO,Activación Servicios,TIMEOUT_31106ms,"Timeout: 31,106ms",now-24h,31106,,
+2026-04-30 08:31:52,2026-04-30 08:05:39,CLARO,Activación Servicios,TIMEOUT_35510ms,"Timeout: 35,510ms",now-7d,35510,,
+2026-04-30 08:31:52,2026-04-29 17:20:56,CLARO,Activación Servicios,TIMEOUT_44239ms,"Timeout: 44,239ms",now-7d,44239,,
+2026-04-30 08:31:52,2026-04-29 17:12:06,CLARO,Activación ONT,TIMEOUT_38864ms,"Timeout: 38,864ms",now-7d,38864,,
+2026-04-30 08:31:43,2026-04-29 16:59:04,ETB,Estado servicio,TIMEOUT_37588ms,"Timeout: 37,588ms",now-7d,37588,,
+2026-04-30 08:31:43,2026-04-29 16:59:03,ETB,Consulta niveles,TIMEOUT_39589ms,"Timeout: 39,589ms",now-7d,39589,,
+2026-04-30 08:31:43,2026-04-29 16:59:03,ETB,Estado servicio,TIMEOUT_40597ms,"Timeout: 40,597ms",now-7d,40597,,
+2026-04-30 08:31:43,2026-04-29 16:57:05,ETB,Ancho de banda,TIMEOUT_35536ms,"Timeout: 35,536ms",now-7d,35536,,
+2026-04-30 08:31:52,2026-04-29 16:54:43,CLARO,Terminación,TIMEOUT_32152ms,"Timeout: 32,152ms",now-7d,32152,,
+2026-04-30 08:31:43,2026-04-29 16:54:42,ETB,Estado servicio,TIMEOUT_34033ms,"Timeout: 34,033ms",now-7d,34033,,
+2026-04-30 08:31:43,2026-04-29 16:54:42,ETB,Ancho de banda,TIMEOUT_33515ms,"Timeout: 33,515ms",now-7d,33515,,
+2026-04-30 08:31:43,2026-04-29 16:54:40,ETB,Consulta niveles,TIMEOUT_37363ms,"Timeout: 37,363ms",now-7d,37363,,
+2026-04-30 08:31:43,2026-04-29 16:53:49,ETB,Ancho de banda,TIMEOUT_36471ms,"Timeout: 36,471ms",now-7d,36471,,
+2026-04-30 08:31:52,2026-04-29 16:46:22,CLARO,Activación Servicios,TIMEOUT_30146ms,"Timeout: 30,146ms",now-7d,30146,,
+2026-04-29 16:26:58,2026-04-29 16:24:12,CLARO,Activación ONT,TIMEOUT_34838ms,"Timeout: 34,838ms",now-7d,34838,,
+2026-04-29 16:26:58,2026-04-29 16:16:20,CLARO,Activación ONT,TIMEOUT_39936ms,"Timeout: 39,936ms",now-7d,39936,,
+2026-04-29 16:26:58,2026-04-29 16:16:19,CLARO,Activación ONT,TIMEOUT_39021ms,"Timeout: 39,021ms",now-7d,39021,,
+2026-04-29 16:26:45,2026-04-29 16:01:17,ETB,Reconexión,TIMEOUT_40376ms,"Timeout: 40,376ms",now-7d,40376,,
+2026-04-29 15:53:28,2026-04-29 15:10:33,CLARO,Activación ONT,TIMEOUT_42492ms,"Timeout: 42,492ms",now-7d,42492,,
+2026-04-29 15:53:28,2026-04-29 15:06:17,CLARO,Activación Servicios,TIMEOUT_37737ms,"Timeout: 37,737ms",now-7d,37737,,
+2026-04-29 15:53:28,2026-04-29 15:06:16,CLARO,Activación Servicios,TIMEOUT_38283ms,"Timeout: 38,283ms",now-7d,38283,,
+2026-04-29 14:37:34,2026-04-29 14:31:03,CLARO,Cambio ONT,TIMEOUT_37954ms,"Timeout: 37,954ms",now-24h,37954,,
+2026-04-29 14:30:23,2026-04-29 14:26:01,CLARO,Activación Servicios,TIMEOUT_30776ms,"Timeout: 30,776ms",now-7d,30776,,
+2026-04-29 14:17:36,2026-04-29 14:01:13,ETB,Reconexión,TIMEOUT_43517ms,"Respuesta lenta: 43,517 ms (>30s)",Importación histórica,43517,SUCCESS,200.0
+2026-04-29 14:17:36,2026-04-29 14:01:12,ETB,Reconexión,TIMEOUT_43962ms,"Respuesta lenta: 43,962 ms (>30s)",Importación histórica,43962,SUCCESS,200.0
+2026-04-29 13:57:04,2026-04-29 13:50:49,CLARO,Activación Servicios,TIMEOUT_35140ms,"Timeout: 35,140ms",now-7d,35140,,
+2026-04-29 13:57:04,2026-04-29 13:35:59,CLARO,Activación Servicios,TIMEOUT_31437ms,"Timeout: 31,437ms",now-7d,31437,,
+2026-04-29 13:57:04,2026-04-29 13:35:30,CLARO,Activación Servicios,TIMEOUT_39873ms,"Timeout: 39,873ms",now-7d,39873,,
+2026-04-29 13:57:04,2026-04-29 13:20:43,CLARO,Activación ONT,TIMEOUT_36008ms,"Timeout: 36,008ms",now-7d,36008,,
+2026-04-29 13:57:04,2026-04-29 13:01:32,CLARO,Activación Servicios,TIMEOUT_35621ms,"Timeout: 35,621ms",now-7d,35621,,
+2026-04-29 13:57:04,2026-04-29 12:49:50,CLARO,Activación Servicios,TIMEOUT_40365ms,"Timeout: 40,365ms",now-7d,40365,,
+2026-04-29 13:57:04,2026-04-29 12:44:00,CLARO,Activación Servicios,TIMEOUT_30121ms,"Timeout: 30,121ms",now-7d,30121,,
+2026-04-29 13:57:04,2026-04-29 12:43:30,CLARO,Activación Servicios,TIMEOUT_43744ms,"Timeout: 43,744ms",now-7d,43744,,
+2026-04-29 12:25:47,2026-04-29 12:22:33,CLARO,Activación Servicios,TIMEOUT_32580ms,"Timeout: 32,580ms",now-7d,32580,,
+2026-04-29 12:07:19,2026-04-29 11:54:16,CLARO,Activación Servicios,TIMEOUT_32162ms,"Respuesta lenta: 32,162 ms (>30s)",Importación histórica,32162,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-29 11:44:18,CLARO,Activación Servicios,TIMEOUT_36141ms,"Respuesta lenta: 36,141 ms (>30s)",Importación histórica,36141,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-29 10:16:07,CLARO,Activación Servicios,TIMEOUT_43232ms,"Respuesta lenta: 43,232 ms (>30s)",Importación histórica,43232,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-29 08:33:35,CLARO,Activación Servicios,TIMEOUT_39633ms,"Respuesta lenta: 39,633 ms (>30s)",Importación histórica,39633,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 16:06:44,CLARO,Activación Servicios,TIMEOUT_32098ms,"Respuesta lenta: 32,098 ms (>30s)",Importación histórica,32098,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 15:55:46,CLARO,Activación Servicios,TIMEOUT_36873ms,"Respuesta lenta: 36,873 ms (>30s)",Importación histórica,36873,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 15:13:21,CLARO,Activación Servicios,TIMEOUT_35229ms,"Respuesta lenta: 35,229 ms (>30s)",Importación histórica,35229,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 15:00:23,CLARO,Activación Servicios,TIMEOUT_31222ms,"Respuesta lenta: 31,222 ms (>30s)",Importación histórica,31222,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 14:40:20,CLARO,Activación Servicios,TIMEOUT_38239ms,"Respuesta lenta: 38,239 ms (>30s)",Importación histórica,38239,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 12:52:53,CLARO,Activación ONT,TIMEOUT_30872ms,"Respuesta lenta: 30,872 ms (>30s)",Importación histórica,30872,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 12:52:48,CLARO,Activación ONT,TIMEOUT_36755ms,"Respuesta lenta: 36,755 ms (>30s)",Importación histórica,36755,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 12:52:42,CLARO,Activación ONT,TIMEOUT_41262ms,"Respuesta lenta: 41,262 ms (>30s)",Importación histórica,41262,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 12:08:11,CLARO,Activación Servicios,TIMEOUT_33536ms,"Respuesta lenta: 33,536 ms (>30s)",Importación histórica,33536,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 11:46:12,CLARO,Activación Servicios,TIMEOUT_30891ms,"Respuesta lenta: 30,891 ms (>30s)",Importación histórica,30891,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 10:24:28,CLARO,Activación Servicios,TIMEOUT_30207ms,"Respuesta lenta: 30,207 ms (>30s)",Importación histórica,30207,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 09:53:20,CLARO,Activación Servicios,TIMEOUT_43592ms,"Respuesta lenta: 43,592 ms (>30s)",Importación histórica,43592,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 09:12:38,CLARO,Activación Servicios,TIMEOUT_42977ms,"Respuesta lenta: 42,977 ms (>30s)",Importación histórica,42977,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 08:26:36,CLARO,Activación Servicios,TIMEOUT_33883ms,"Respuesta lenta: 33,883 ms (>30s)",Importación histórica,33883,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 08:26:22,CLARO,Activación Servicios,TIMEOUT_34784ms,"Respuesta lenta: 34,784 ms (>30s)",Importación histórica,34784,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 08:26:07,CLARO,Activación Servicios,TIMEOUT_30954ms,"Respuesta lenta: 30,954 ms (>30s)",Importación histórica,30954,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 02:16:23,CLARO,Terminación,TIMEOUT_35991ms,"Respuesta lenta: 35,991 ms (>30s)",Importación histórica,35991,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 02:16:22,CLARO,Terminación,TIMEOUT_38467ms,"Respuesta lenta: 38,467 ms (>30s)",Importación histórica,38467,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 02:16:21,CLARO,Terminación,TIMEOUT_39608ms,"Respuesta lenta: 39,608 ms (>30s)",Importación histórica,39608,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 02:16:15,CLARO,Terminación,TIMEOUT_31296ms,"Respuesta lenta: 31,296 ms (>30s)",Importación histórica,31296,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-28 02:16:15,CLARO,Terminación,TIMEOUT_32271ms,"Respuesta lenta: 32,271 ms (>30s)",Importación histórica,32271,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:57:21,CLARO,Activación Servicios,TIMEOUT_32849ms,"Respuesta lenta: 32,849 ms (>30s)",Importación histórica,32849,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:46:04,CLARO,Activación Servicios,TIMEOUT_30085ms,"Respuesta lenta: 30,085 ms (>30s)",Importación histórica,30085,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:43:57,CLARO,Activación ONT,TIMEOUT_36974ms,"Respuesta lenta: 36,974 ms (>30s)",Importación histórica,36974,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:36:57,CLARO,Activación ONT,TIMEOUT_36280ms,"Respuesta lenta: 36,280 ms (>30s)",Importación histórica,36280,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:32:55,CLARO,Activación Servicios,TIMEOUT_35169ms,"Respuesta lenta: 35,169 ms (>30s)",Importación histórica,35169,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:30:33,CLARO,Activación ONT,TIMEOUT_31259ms,"Respuesta lenta: 31,259 ms (>30s)",Importación histórica,31259,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:30:32,CLARO,Activación ONT,TIMEOUT_32339ms,"Respuesta lenta: 32,339 ms (>30s)",Importación histórica,32339,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:28:26,CLARO,Activación ONT,TIMEOUT_37070ms,"Respuesta lenta: 37,070 ms (>30s)",Importación histórica,37070,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:26:07,CLARO,Cambio ONT,TIMEOUT_30456ms,"Respuesta lenta: 30,456 ms (>30s)",Importación histórica,30456,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:25:56,CLARO,Activación ONT,TIMEOUT_42136ms,"Respuesta lenta: 42,136 ms (>30s)",Importación histórica,42136,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:21:26,CLARO,Activación Servicios,TIMEOUT_39208ms,"Respuesta lenta: 39,208 ms (>30s)",Importación histórica,39208,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:19:32,CLARO,Activación ONT,TIMEOUT_33362ms,"Respuesta lenta: 33,362 ms (>30s)",Importación histórica,33362,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:07:50,CLARO,Activación ONT,TIMEOUT_31036ms,"Respuesta lenta: 31,036 ms (>30s)",Importación histórica,31036,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 16:01:14,CLARO,Activación ONT,TIMEOUT_30978ms,"Respuesta lenta: 30,978 ms (>30s)",Importación histórica,30978,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 15:52:16,CLARO,Activación Servicios,TIMEOUT_30024ms,"Respuesta lenta: 30,024 ms (>30s)",Importación histórica,30024,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 15:41:18,CLARO,Activación Servicios,TIMEOUT_43673ms,"Respuesta lenta: 43,673 ms (>30s)",Importación histórica,43673,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 15:39:31,CLARO,Terminación,TIMEOUT_36950ms,"Respuesta lenta: 36,950 ms (>30s)",Importación histórica,36950,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 15:36:54,CLARO,Activación Servicios,TIMEOUT_42303ms,"Respuesta lenta: 42,303 ms (>30s)",Importación histórica,42303,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 14:22:40,CLARO,Activación Servicios,TIMEOUT_32435ms,"Respuesta lenta: 32,435 ms (>30s)",Importación histórica,32435,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 14:13:54,CLARO,Activación Servicios,TIMEOUT_41838ms,"Respuesta lenta: 41,838 ms (>30s)",Importación histórica,41838,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 14:13:46,CLARO,Activación Servicios,TIMEOUT_39478ms,"Respuesta lenta: 39,478 ms (>30s)",Importación histórica,39478,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 14:09:10,CLARO,Activación ONT,TIMEOUT_30066ms,"Respuesta lenta: 30,066 ms (>30s)",Importación histórica,30066,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 12:36:19,CLARO,Activación Servicios,TIMEOUT_34821ms,"Respuesta lenta: 34,821 ms (>30s)",Importación histórica,34821,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 12:00:02,CLARO,Activación Servicios,TIMEOUT_30967ms,"Respuesta lenta: 30,967 ms (>30s)",Importación histórica,30967,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 12:00:02,CLARO,Activación Servicios,TIMEOUT_38792ms,"Respuesta lenta: 38,792 ms (>30s)",Importación histórica,38792,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 11:59:20,CLARO,Cambio ONT,TIMEOUT_42864ms,"Respuesta lenta: 42,864 ms (>30s)",Importación histórica,42864,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 11:59:19,CLARO,Cambio ONT,TIMEOUT_43480ms,"Respuesta lenta: 43,480 ms (>30s)",Importación histórica,43480,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 11:27:15,CLARO,Reserva,TIMEOUT_44411ms,"Respuesta lenta: 44,411 ms (>30s)",Importación histórica,44411,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 10:39:12,CLARO,Cambio ONT,TIMEOUT_31442ms,"Respuesta lenta: 31,442 ms (>30s)",Importación histórica,31442,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 10:39:12,CLARO,Cambio ONT,TIMEOUT_32125ms,"Respuesta lenta: 32,125 ms (>30s)",Importación histórica,32125,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 10:06:26,CLARO,Activación Servicios,TIMEOUT_30825ms,"Respuesta lenta: 30,825 ms (>30s)",Importación histórica,30825,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 10:06:06,CLARO,Activación Servicios,TIMEOUT_41672ms,"Respuesta lenta: 41,672 ms (>30s)",Importación histórica,41672,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 09:50:20,CLARO,Estado servicio,TIMEOUT_30760ms,"Respuesta lenta: 30,760 ms (>30s)",Importación histórica,30760,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 09:43:42,CLARO,Activación Servicios,TIMEOUT_37656ms,"Respuesta lenta: 37,656 ms (>30s)",Importación histórica,37656,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 09:43:42,CLARO,Activación Servicios,TIMEOUT_37338ms,"Respuesta lenta: 37,338 ms (>30s)",Importación histórica,37338,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 09:40:58,CLARO,Activación Servicios,TIMEOUT_34084ms,"Respuesta lenta: 34,084 ms (>30s)",Importación histórica,34084,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 09:33:01,CLARO,Activación Servicios,TIMEOUT_31595ms,"Respuesta lenta: 31,595 ms (>30s)",Importación histórica,31595,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 09:19:05,CLARO,Activación Servicios,TIMEOUT_38614ms,"Respuesta lenta: 38,614 ms (>30s)",Importación histórica,38614,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 08:48:35,CLARO,Activación Servicios,TIMEOUT_32366ms,"Respuesta lenta: 32,366 ms (>30s)",Importación histórica,32366,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-27 08:46:34,CLARO,Activación Servicios,TIMEOUT_30572ms,"Respuesta lenta: 30,572 ms (>30s)",Importación histórica,30572,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 18:15:47,CLARO,Activación Servicios,TIMEOUT_30949ms,"Respuesta lenta: 30,949 ms (>30s)",Importación histórica,30949,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 16:07:44,CLARO,Activación ONT,TIMEOUT_34511ms,"Respuesta lenta: 34,511 ms (>30s)",Importación histórica,34511,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 15:15:29,CLARO,Activación Servicios,TIMEOUT_30703ms,"Respuesta lenta: 30,703 ms (>30s)",Importación histórica,30703,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 14:19:49,CLARO,Activación Servicios,TIMEOUT_37745ms,"Respuesta lenta: 37,745 ms (>30s)",Importación histórica,37745,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 14:19:26,CLARO,Activación Servicios,TIMEOUT_39435ms,"Respuesta lenta: 39,435 ms (>30s)",Importación histórica,39435,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 14:19:19,CLARO,Activación Servicios,TIMEOUT_39444ms,"Respuesta lenta: 39,444 ms (>30s)",Importación histórica,39444,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 10:42:37,CLARO,Activación Servicios,TIMEOUT_35675ms,"Respuesta lenta: 35,675 ms (>30s)",Importación histórica,35675,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 10:22:30,CLARO,Activación Servicios,TIMEOUT_31875ms,"Respuesta lenta: 31,875 ms (>30s)",Importación histórica,31875,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 10:08:47,CLARO,Activación Servicios,TIMEOUT_38776ms,"Respuesta lenta: 38,776 ms (>30s)",Importación histórica,38776,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 10:04:59,CLARO,Activación Servicios,TIMEOUT_35735ms,"Respuesta lenta: 35,735 ms (>30s)",Importación histórica,35735,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 10:04:59,CLARO,Activación Servicios,TIMEOUT_35633ms,"Respuesta lenta: 35,633 ms (>30s)",Importación histórica,35633,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 10:04:34,CLARO,Activación Servicios,TIMEOUT_35422ms,"Respuesta lenta: 35,422 ms (>30s)",Importación histórica,35422,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 10:02:42,CLARO,Activación Servicios,TIMEOUT_32382ms,"Respuesta lenta: 32,382 ms (>30s)",Importación histórica,32382,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 09:05:13,CLARO,Activación Servicios,TIMEOUT_44095ms,"Respuesta lenta: 44,095 ms (>30s)",Importación histórica,44095,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 08:56:54,CLARO,Activación Servicios,TIMEOUT_38837ms,"Respuesta lenta: 38,837 ms (>30s)",Importación histórica,38837,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 08:56:37,CLARO,Activación Servicios,TIMEOUT_38587ms,"Respuesta lenta: 38,587 ms (>30s)",Importación histórica,38587,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 08:54:36,CLARO,Activación Servicios,TIMEOUT_32412ms,"Respuesta lenta: 32,412 ms (>30s)",Importación histórica,32412,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 08:54:04,CLARO,Activación Servicios,TIMEOUT_35278ms,"Respuesta lenta: 35,278 ms (>30s)",Importación histórica,35278,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 08:28:29,CLARO,Activación ONT,TIMEOUT_32128ms,"Respuesta lenta: 32,128 ms (>30s)",Importación histórica,32128,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 08:28:27,CLARO,Activación ONT,TIMEOUT_34166ms,"Respuesta lenta: 34,166 ms (>30s)",Importación histórica,34166,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 08:08:42,CLARO,Activación Servicios,TIMEOUT_36782ms,"Respuesta lenta: 36,782 ms (>30s)",Importación histórica,36782,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 08:08:40,CLARO,Activación Servicios,TIMEOUT_37920ms,"Respuesta lenta: 37,920 ms (>30s)",Importación histórica,37920,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-25 08:08:09,CLARO,Activación Servicios,TIMEOUT_39832ms,"Respuesta lenta: 39,832 ms (>30s)",Importación histórica,39832,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 17:06:56,CLARO,Activación Servicios,TIMEOUT_31050ms,"Respuesta lenta: 31,050 ms (>30s)",Importación histórica,31050,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 16:52:47,CLARO,Activación ONT,TIMEOUT_31908ms,"Respuesta lenta: 31,908 ms (>30s)",Importación histórica,31908,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 16:52:42,CLARO,Activación ONT,TIMEOUT_37429ms,"Respuesta lenta: 37,429 ms (>30s)",Importación histórica,37429,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 16:47:42,CLARO,Activación Servicios,TIMEOUT_31134ms,"Respuesta lenta: 31,134 ms (>30s)",Importación histórica,31134,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 16:47:42,CLARO,Activación Servicios,TIMEOUT_31842ms,"Respuesta lenta: 31,842 ms (>30s)",Importación histórica,31842,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 16:02:37,CLARO,Activación Servicios,TIMEOUT_31355ms,"Respuesta lenta: 31,355 ms (>30s)",Importación histórica,31355,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 16:02:37,CLARO,Activación Servicios,TIMEOUT_30415ms,"Respuesta lenta: 30,415 ms (>30s)",Importación histórica,30415,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 15:59:21,CLARO,Activación Servicios,TIMEOUT_41566ms,"Respuesta lenta: 41,566 ms (>30s)",Importación histórica,41566,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 15:51:43,CLARO,Activación Servicios,TIMEOUT_37480ms,"Respuesta lenta: 37,480 ms (>30s)",Importación histórica,37480,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 15:34:45,CLARO,Activación Servicios,TIMEOUT_41011ms,"Respuesta lenta: 41,011 ms (>30s)",Importación histórica,41011,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 15:34:45,CLARO,Activación Servicios,TIMEOUT_40765ms,"Respuesta lenta: 40,765 ms (>30s)",Importación histórica,40765,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 15:24:58,CLARO,Activación Servicios,TIMEOUT_35213ms,"Respuesta lenta: 35,213 ms (>30s)",Importación histórica,35213,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 15:24:57,CLARO,Activación Servicios,TIMEOUT_43339ms,"Respuesta lenta: 43,339 ms (>30s)",Importación histórica,43339,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 14:11:08,CLARO,Activación Servicios,TIMEOUT_31025ms,"Respuesta lenta: 31,025 ms (>30s)",Importación histórica,31025,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 14:11:08,CLARO,Activación Servicios,TIMEOUT_30909ms,"Respuesta lenta: 30,909 ms (>30s)",Importación histórica,30909,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 13:05:09,CLARO,Activación Servicios,TIMEOUT_30018ms,"Respuesta lenta: 30,018 ms (>30s)",Importación histórica,30018,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 13:03:27,CLARO,Activación Servicios,TIMEOUT_39173ms,"Respuesta lenta: 39,173 ms (>30s)",Importación histórica,39173,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 13:02:30,CLARO,Activación Servicios,TIMEOUT_44125ms,"Respuesta lenta: 44,125 ms (>30s)",Importación histórica,44125,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 10:04:43,CLARO,Activación Servicios,TIMEOUT_37931ms,"Respuesta lenta: 37,931 ms (>30s)",Importación histórica,37931,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 10:04:42,CLARO,Activación Servicios,TIMEOUT_37349ms,"Respuesta lenta: 37,349 ms (>30s)",Importación histórica,37349,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 10:02:02,CLARO,Activación Servicios,TIMEOUT_41638ms,"Respuesta lenta: 41,638 ms (>30s)",Importación histórica,41638,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 10:02:02,CLARO,Activación Servicios,TIMEOUT_40592ms,"Respuesta lenta: 40,592 ms (>30s)",Importación histórica,40592,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 10:01:35,CLARO,Activación Servicios,TIMEOUT_40568ms,"Respuesta lenta: 40,568 ms (>30s)",Importación histórica,40568,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 09:43:22,CLARO,Activación Servicios,TIMEOUT_39601ms,"Respuesta lenta: 39,601 ms (>30s)",Importación histórica,39601,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 09:43:14,ETB,Activación Servicios,TIMEOUT_32585ms,"Respuesta lenta: 32,585 ms (>30s)",Importación histórica,32585,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 09:42:32,CLARO,Activación ONT,TIMEOUT_30923ms,"Respuesta lenta: 30,923 ms (>30s)",Importación histórica,30923,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 09:42:29,CLARO,Activación ONT,TIMEOUT_33594ms,"Respuesta lenta: 33,594 ms (>30s)",Importación histórica,33594,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 09:22:55,CLARO,Activación Servicios,TIMEOUT_39709ms,"Respuesta lenta: 39,709 ms (>30s)",Importación histórica,39709,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 09:22:27,CLARO,Activación Servicios,TIMEOUT_30368ms,"Respuesta lenta: 30,368 ms (>30s)",Importación histórica,30368,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 09:21:56,CLARO,Activación ONT,TIMEOUT_30746ms,"Respuesta lenta: 30,746 ms (>30s)",Importación histórica,30746,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 08:52:30,CLARO,Activación Servicios,TIMEOUT_34145ms,"Respuesta lenta: 34,145 ms (>30s)",Importación histórica,34145,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 08:52:15,CLARO,Activación Servicios,TIMEOUT_31422ms,"Respuesta lenta: 31,422 ms (>30s)",Importación histórica,31422,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 08:52:14,CLARO,Activación Servicios,TIMEOUT_31677ms,"Respuesta lenta: 31,677 ms (>30s)",Importación histórica,31677,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 08:52:14,CLARO,Activación Servicios,TIMEOUT_42335ms,"Respuesta lenta: 42,335 ms (>30s)",Importación histórica,42335,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-24 08:34:13,CLARO,Activación Servicios,TIMEOUT_37251ms,"Respuesta lenta: 37,251 ms (>30s)",Importación histórica,37251,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 15:43:32,CLARO,Activación Servicios,TIMEOUT_31314ms,"Respuesta lenta: 31,314 ms (>30s)",Importación histórica,31314,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 15:03:31,CLARO,Activación Servicios,TIMEOUT_33779ms,"Respuesta lenta: 33,779 ms (>30s)",Importación histórica,33779,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 14:09:36,CLARO,Activación Servicios,TIMEOUT_31812ms,"Respuesta lenta: 31,812 ms (>30s)",Importación histórica,31812,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 13:29:42,CLARO,Activación Servicios,TIMEOUT_42076ms,"Respuesta lenta: 42,076 ms (>30s)",Importación histórica,42076,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 13:29:42,CLARO,Activación Servicios,TIMEOUT_41981ms,"Respuesta lenta: 41,981 ms (>30s)",Importación histórica,41981,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 11:53:49,CLARO,Activación Servicios,TIMEOUT_36847ms,"Respuesta lenta: 36,847 ms (>30s)",Importación histórica,36847,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 11:35:03,CLARO,Activación Servicios,TIMEOUT_34019ms,"Respuesta lenta: 34,019 ms (>30s)",Importación histórica,34019,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 11:35:03,CLARO,Activación Servicios,TIMEOUT_38419ms,"Respuesta lenta: 38,419 ms (>30s)",Importación histórica,38419,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 09:11:25,CLARO,Activación Servicios,TIMEOUT_37546ms,"Respuesta lenta: 37,546 ms (>30s)",Importación histórica,37546,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 08:43:35,CLARO,Activación Servicios,TIMEOUT_32811ms,"Respuesta lenta: 32,811 ms (>30s)",Importación histórica,32811,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-23 08:39:47,CLARO,Activación Servicios,TIMEOUT_37953ms,"Respuesta lenta: 37,953 ms (>30s)",Importación histórica,37953,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 16:46:41,CLARO,Activación Servicios,TIMEOUT_35570ms,"Respuesta lenta: 35,570 ms (>30s)",Importación histórica,35570,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 15:04:18,CLARO,Activación Servicios,TIMEOUT_33193ms,"Respuesta lenta: 33,193 ms (>30s)",Importación histórica,33193,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 15:04:17,CLARO,Activación Servicios,TIMEOUT_34468ms,"Respuesta lenta: 34,468 ms (>30s)",Importación histórica,34468,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 14:58:32,CLARO,Activación Servicios,TIMEOUT_36199ms,"Respuesta lenta: 36,199 ms (>30s)",Importación histórica,36199,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 14:58:32,CLARO,Activación Servicios,TIMEOUT_39718ms,"Respuesta lenta: 39,718 ms (>30s)",Importación histórica,39718,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 12:55:42,CLARO,Activación Servicios,TIMEOUT_33435ms,"Respuesta lenta: 33,435 ms (>30s)",Importación histórica,33435,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 12:55:42,CLARO,Activación Servicios,TIMEOUT_33209ms,"Respuesta lenta: 33,209 ms (>30s)",Importación histórica,33209,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 12:22:48,CLARO,Activación Servicios,TIMEOUT_41990ms,"Respuesta lenta: 41,990 ms (>30s)",Importación histórica,41990,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 12:22:47,CLARO,Activación Servicios,TIMEOUT_35559ms,"Respuesta lenta: 35,559 ms (>30s)",Importación histórica,35559,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 11:58:43,CLARO,Activación Servicios,TIMEOUT_31188ms,"Respuesta lenta: 31,188 ms (>30s)",Importación histórica,31188,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 11:35:31,CLARO,Activación Servicios,TIMEOUT_42025ms,"Respuesta lenta: 42,025 ms (>30s)",Importación histórica,42025,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 11:12:25,CLARO,Activación Servicios,TIMEOUT_30155ms,"Respuesta lenta: 30,155 ms (>30s)",Importación histórica,30155,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 11:07:55,CLARO,Activación Servicios,TIMEOUT_30238ms,"Respuesta lenta: 30,238 ms (>30s)",Importación histórica,30238,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 11:07:47,CLARO,Activación Servicios,TIMEOUT_37787ms,"Respuesta lenta: 37,787 ms (>30s)",Importación histórica,37787,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 11:02:43,CLARO,Activación Servicios,TIMEOUT_31440ms,"Respuesta lenta: 31,440 ms (>30s)",Importación histórica,31440,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 11:02:43,CLARO,Activación Servicios,TIMEOUT_31412ms,"Respuesta lenta: 31,412 ms (>30s)",Importación histórica,31412,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:52:40,CLARO,Activación Servicios,TIMEOUT_30626ms,"Respuesta lenta: 30,626 ms (>30s)",Importación histórica,30626,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:52:39,CLARO,Activación Servicios,TIMEOUT_30868ms,"Respuesta lenta: 30,868 ms (>30s)",Importación histórica,30868,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:45:15,CLARO,Activación Servicios,TIMEOUT_38806ms,"Respuesta lenta: 38,806 ms (>30s)",Importación histórica,38806,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:45:15,CLARO,Activación Servicios,TIMEOUT_38239ms,"Respuesta lenta: 38,239 ms (>30s)",Importación histórica,38239,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:34:25,CLARO,Cambio ONT,TIMEOUT_36666ms,"Respuesta lenta: 36,666 ms (>30s)",Importación histórica,36666,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:34:25,CLARO,Cambio ONT,TIMEOUT_37211ms,"Respuesta lenta: 37,211 ms (>30s)",Importación histórica,37211,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:14:12,CLARO,Activación Servicios,TIMEOUT_34978ms,"Respuesta lenta: 34,978 ms (>30s)",Importación histórica,34978,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:14:12,CLARO,Activación Servicios,TIMEOUT_31135ms,"Respuesta lenta: 31,135 ms (>30s)",Importación histórica,31135,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:14:11,CLARO,Activación Servicios,TIMEOUT_35317ms,"Respuesta lenta: 35,317 ms (>30s)",Importación histórica,35317,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 09:06:58,CLARO,Activación Servicios,TIMEOUT_31061ms,"Respuesta lenta: 31,061 ms (>30s)",Importación histórica,31061,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 08:20:09,CLARO,Activación Servicios,TIMEOUT_32145ms,"Respuesta lenta: 32,145 ms (>30s)",Importación histórica,32145,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-22 08:20:09,CLARO,Activación Servicios,TIMEOUT_32512ms,"Respuesta lenta: 32,512 ms (>30s)",Importación histórica,32512,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 12:57:39,CLARO,Activación Servicios,TIMEOUT_33299ms,"Respuesta lenta: 33,299 ms (>30s)",Importación histórica,33299,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 12:57:38,CLARO,Activación Servicios,TIMEOUT_33852ms,"Respuesta lenta: 33,852 ms (>30s)",Importación histórica,33852,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 12:35:14,CLARO,Activación Servicios,TIMEOUT_32683ms,"Respuesta lenta: 32,683 ms (>30s)",Importación histórica,32683,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 12:35:13,CLARO,Activación Servicios,TIMEOUT_33361ms,"Respuesta lenta: 33,361 ms (>30s)",Importación histórica,33361,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 12:14:45,CLARO,Activación Servicios,TIMEOUT_36127ms,"Respuesta lenta: 36,127 ms (>30s)",Importación histórica,36127,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 11:25:56,CLARO,Activación Servicios,TIMEOUT_33713ms,"Respuesta lenta: 33,713 ms (>30s)",Importación histórica,33713,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 11:19:58,CLARO,Activación Servicios,TIMEOUT_32455ms,"Respuesta lenta: 32,455 ms (>30s)",Importación histórica,32455,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 11:19:50,CLARO,Activación Servicios,TIMEOUT_36980ms,"Respuesta lenta: 36,980 ms (>30s)",Importación histórica,36980,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 11:11:38,CLARO,Activación Servicios,TIMEOUT_36480ms,"Respuesta lenta: 36,480 ms (>30s)",Importación histórica,36480,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 11:01:52,CLARO,Activación Servicios,TIMEOUT_38643ms,"Respuesta lenta: 38,643 ms (>30s)",Importación histórica,38643,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 11:01:52,CLARO,Activación Servicios,TIMEOUT_38545ms,"Respuesta lenta: 38,545 ms (>30s)",Importación histórica,38545,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 10:52:17,CLARO,Activación Servicios,TIMEOUT_42009ms,"Respuesta lenta: 42,009 ms (>30s)",Importación histórica,42009,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 10:52:17,CLARO,Activación Servicios,TIMEOUT_40243ms,"Respuesta lenta: 40,243 ms (>30s)",Importación histórica,40243,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 09:10:58,CLARO,Activación Servicios,TIMEOUT_38817ms,"Respuesta lenta: 38,817 ms (>30s)",Importación histórica,38817,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 09:10:58,CLARO,Activación Servicios,TIMEOUT_38639ms,"Respuesta lenta: 38,639 ms (>30s)",Importación histórica,38639,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 08:59:12,CLARO,Activación Servicios,TIMEOUT_41150ms,"Respuesta lenta: 41,150 ms (>30s)",Importación histórica,41150,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 08:59:12,CLARO,Activación Servicios,TIMEOUT_41639ms,"Respuesta lenta: 41,639 ms (>30s)",Importación histórica,41639,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-21 08:31:28,CLARO,Activación Servicios,TIMEOUT_30759ms,"Respuesta lenta: 30,759 ms (>30s)",Importación histórica,30759,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 15:44:57,CLARO,Cambio ONT,TIMEOUT_36909ms,"Respuesta lenta: 36,909 ms (>30s)",Importación histórica,36909,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 15:44:56,CLARO,Cambio ONT,TIMEOUT_37486ms,"Respuesta lenta: 37,486 ms (>30s)",Importación histórica,37486,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 15:44:52,CLARO,Activación Servicios,TIMEOUT_37333ms,"Respuesta lenta: 37,333 ms (>30s)",Importación histórica,37333,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 15:35:56,CLARO,Activación Servicios,TIMEOUT_34524ms,"Respuesta lenta: 34,524 ms (>30s)",Importación histórica,34524,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 15:35:56,CLARO,Activación Servicios,TIMEOUT_34485ms,"Respuesta lenta: 34,485 ms (>30s)",Importación histórica,34485,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 15:34:00,CLARO,Activación Servicios,TIMEOUT_42536ms,"Respuesta lenta: 42,536 ms (>30s)",Importación histórica,42536,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 15:34:00,CLARO,Activación Servicios,TIMEOUT_42424ms,"Respuesta lenta: 42,424 ms (>30s)",Importación histórica,42424,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 13:52:34,CLARO,Activación Servicios,TIMEOUT_34986ms,"Respuesta lenta: 34,986 ms (>30s)",Importación histórica,34986,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 13:52:34,CLARO,Activación Servicios,TIMEOUT_34947ms,"Respuesta lenta: 34,947 ms (>30s)",Importación histórica,34947,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 13:10:34,CLARO,Activación Servicios,TIMEOUT_38073ms,"Respuesta lenta: 38,073 ms (>30s)",Importación histórica,38073,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 12:40:42,CLARO,Activación Servicios,TIMEOUT_36957ms,"Respuesta lenta: 36,957 ms (>30s)",Importación histórica,36957,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 12:40:42,CLARO,Activación Servicios,TIMEOUT_37314ms,"Respuesta lenta: 37,314 ms (>30s)",Importación histórica,37314,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 12:14:12,CLARO,Activación Servicios,TIMEOUT_42396ms,"Respuesta lenta: 42,396 ms (>30s)",Importación histórica,42396,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 12:01:35,CLARO,Activación Servicios,TIMEOUT_38625ms,"Respuesta lenta: 38,625 ms (>30s)",Importación histórica,38625,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 11:55:47,CLARO,Activación Servicios,TIMEOUT_34062ms,"Respuesta lenta: 34,062 ms (>30s)",Importación histórica,34062,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 11:47:44,CLARO,Activación Servicios,TIMEOUT_34385ms,"Respuesta lenta: 34,385 ms (>30s)",Importación histórica,34385,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 11:47:44,CLARO,Activación Servicios,TIMEOUT_34468ms,"Respuesta lenta: 34,468 ms (>30s)",Importación histórica,34468,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 11:31:35,CLARO,Activación Servicios,TIMEOUT_41008ms,"Respuesta lenta: 41,008 ms (>30s)",Importación histórica,41008,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 11:31:35,CLARO,Activación Servicios,TIMEOUT_40668ms,"Respuesta lenta: 40,668 ms (>30s)",Importación histórica,40668,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 11:25:54,CLARO,Activación Servicios,TIMEOUT_34481ms,"Respuesta lenta: 34,481 ms (>30s)",Importación histórica,34481,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 11:25:46,CLARO,Activación Servicios,TIMEOUT_36392ms,"Respuesta lenta: 36,392 ms (>30s)",Importación histórica,36392,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 11:03:58,CLARO,Activación Servicios,TIMEOUT_31872ms,"Respuesta lenta: 31,872 ms (>30s)",Importación histórica,31872,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 10:27:27,CLARO,Activación Servicios,TIMEOUT_34959ms,"Respuesta lenta: 34,959 ms (>30s)",Importación histórica,34959,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 10:27:27,CLARO,Activación Servicios,TIMEOUT_30815ms,"Respuesta lenta: 30,815 ms (>30s)",Importación histórica,30815,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 09:01:40,CLARO,Activación Servicios,TIMEOUT_37030ms,"Respuesta lenta: 37,030 ms (>30s)",Importación histórica,37030,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 09:01:39,CLARO,Activación Servicios,TIMEOUT_41043ms,"Respuesta lenta: 41,043 ms (>30s)",Importación histórica,41043,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 08:58:36,CLARO,Activación Servicios,TIMEOUT_32432ms,"Respuesta lenta: 32,432 ms (>30s)",Importación histórica,32432,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 08:58:36,CLARO,Activación Servicios,TIMEOUT_32500ms,"Respuesta lenta: 32,500 ms (>30s)",Importación histórica,32500,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 08:56:00,CLARO,Activación Servicios,TIMEOUT_36537ms,"Respuesta lenta: 36,537 ms (>30s)",Importación histórica,36537,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 08:33:46,CLARO,Activación Servicios,TIMEOUT_36721ms,"Respuesta lenta: 36,721 ms (>30s)",Importación histórica,36721,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-20 08:33:46,CLARO,Activación Servicios,TIMEOUT_36264ms,"Respuesta lenta: 36,264 ms (>30s)",Importación histórica,36264,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 14:00:50,CLARO,Activación ONT,TIMEOUT_33498ms,"Respuesta lenta: 33,498 ms (>30s)",Importación histórica,33498,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 14:00:49,CLARO,Activación ONT,TIMEOUT_34610ms,"Respuesta lenta: 34,610 ms (>30s)",Importación histórica,34610,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 12:59:47,CLARO,Activación Servicios,TIMEOUT_39840ms,"Respuesta lenta: 39,840 ms (>30s)",Importación histórica,39840,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 12:59:47,CLARO,Activación Servicios,TIMEOUT_39490ms,"Respuesta lenta: 39,490 ms (>30s)",Importación histórica,39490,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 11:10:08,CLARO,Activación Servicios,TIMEOUT_31694ms,"Respuesta lenta: 31,694 ms (>30s)",Importación histórica,31694,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 11:10:08,CLARO,Activación Servicios,TIMEOUT_31331ms,"Respuesta lenta: 31,331 ms (>30s)",Importación histórica,31331,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 10:13:18,CLARO,Activación Servicios,TIMEOUT_32020ms,"Respuesta lenta: 32,020 ms (>30s)",Importación histórica,32020,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 10:08:23,CLARO,Activación Servicios,TIMEOUT_32079ms,"Respuesta lenta: 32,079 ms (>30s)",Importación histórica,32079,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 10:08:22,CLARO,Activación Servicios,TIMEOUT_31925ms,"Respuesta lenta: 31,925 ms (>30s)",Importación histórica,31925,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 09:44:42,CLARO,Activación Servicios,TIMEOUT_37954ms,"Respuesta lenta: 37,954 ms (>30s)",Importación histórica,37954,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 09:44:42,CLARO,Activación Servicios,TIMEOUT_36900ms,"Respuesta lenta: 36,900 ms (>30s)",Importación histórica,36900,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 09:44:08,CLARO,Activación Servicios,TIMEOUT_38582ms,"Respuesta lenta: 38,582 ms (>30s)",Importación histórica,38582,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 09:39:07,CLARO,Activación ONT,TIMEOUT_32541ms,"Respuesta lenta: 32,541 ms (>30s)",Importación histórica,32541,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 09:38:54,CLARO,Cambio ONT,TIMEOUT_32302ms,"Respuesta lenta: 32,302 ms (>30s)",Importación histórica,32302,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 09:38:54,CLARO,Cambio ONT,TIMEOUT_32705ms,"Respuesta lenta: 32,705 ms (>30s)",Importación histórica,32705,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 09:38:49,CLARO,Activación ONT,TIMEOUT_43098ms,"Respuesta lenta: 43,098 ms (>30s)",Importación histórica,43098,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 09:30:40,CLARO,Activación Servicios,TIMEOUT_30024ms,"Respuesta lenta: 30,024 ms (>30s)",Importación histórica,30024,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-18 09:30:40,CLARO,Activación Servicios,TIMEOUT_30220ms,"Respuesta lenta: 30,220 ms (>30s)",Importación histórica,30220,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 15:57:52,CLARO,Activación Servicios,TIMEOUT_42492ms,"Respuesta lenta: 42,492 ms (>30s)",Importación histórica,42492,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 15:57:52,CLARO,Activación Servicios,TIMEOUT_42839ms,"Respuesta lenta: 42,839 ms (>30s)",Importación histórica,42839,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 14:50:20,CLARO,Activación Servicios,TIMEOUT_32138ms,"Respuesta lenta: 32,138 ms (>30s)",Importación histórica,32138,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 14:50:19,CLARO,Activación Servicios,TIMEOUT_38228ms,"Respuesta lenta: 38,228 ms (>30s)",Importación histórica,38228,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 14:50:19,CLARO,Activación Servicios,TIMEOUT_43193ms,"Respuesta lenta: 43,193 ms (>30s)",Importación histórica,43193,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 13:27:47,CLARO,Activación Servicios,TIMEOUT_31024ms,"Respuesta lenta: 31,024 ms (>30s)",Importación histórica,31024,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 13:27:45,CLARO,Activación Servicios,TIMEOUT_40036ms,"Respuesta lenta: 40,036 ms (>30s)",Importación histórica,40036,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 13:27:44,CLARO,Activación Servicios,TIMEOUT_41296ms,"Respuesta lenta: 41,296 ms (>30s)",Importación histórica,41296,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 13:27:08,CLARO,Activación Servicios,TIMEOUT_42295ms,"Respuesta lenta: 42,295 ms (>30s)",Importación histórica,42295,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 12:14:51,CLARO,Activación Servicios,TIMEOUT_36257ms,"Respuesta lenta: 36,257 ms (>30s)",Importación histórica,36257,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 12:14:51,CLARO,Activación Servicios,TIMEOUT_36249ms,"Respuesta lenta: 36,249 ms (>30s)",Importación histórica,36249,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 11:11:42,CLARO,Activación Servicios,TIMEOUT_36421ms,"Respuesta lenta: 36,421 ms (>30s)",Importación histórica,36421,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 11:11:42,CLARO,Activación Servicios,TIMEOUT_40116ms,"Respuesta lenta: 40,116 ms (>30s)",Importación histórica,40116,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 10:30:26,CLARO,Activación Servicios,TIMEOUT_30740ms,"Respuesta lenta: 30,740 ms (>30s)",Importación histórica,30740,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 10:30:25,CLARO,Activación Servicios,TIMEOUT_43056ms,"Respuesta lenta: 43,056 ms (>30s)",Importación histórica,43056,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 10:30:25,CLARO,Activación Servicios,TIMEOUT_43018ms,"Respuesta lenta: 43,018 ms (>30s)",Importación histórica,43018,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 09:58:17,CLARO,Activación Servicios,TIMEOUT_38319ms,"Respuesta lenta: 38,319 ms (>30s)",Importación histórica,38319,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 09:39:34,CLARO,Activación Servicios,TIMEOUT_32589ms,"Respuesta lenta: 32,589 ms (>30s)",Importación histórica,32589,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 08:45:53,CLARO,Activación Servicios,TIMEOUT_34274ms,"Respuesta lenta: 34,274 ms (>30s)",Importación histórica,34274,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 08:45:53,CLARO,Activación Servicios,TIMEOUT_33065ms,"Respuesta lenta: 33,065 ms (>30s)",Importación histórica,33065,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 08:30:42,CLARO,Activación Servicios,TIMEOUT_32453ms,"Respuesta lenta: 32,453 ms (>30s)",Importación histórica,32453,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-17 08:30:41,CLARO,Activación Servicios,TIMEOUT_31518ms,"Respuesta lenta: 31,518 ms (>30s)",Importación histórica,31518,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-16 10:45:20,CLARO,Activación Servicios,TIMEOUT_39753ms,"Respuesta lenta: 39,753 ms (>30s)",Importación histórica,39753,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-16 10:03:13,CLARO,Cambio ONT,TIMEOUT_34566ms,"Respuesta lenta: 34,566 ms (>30s)",Importación histórica,34566,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-16 10:03:12,CLARO,Cambio ONT,TIMEOUT_35208ms,"Respuesta lenta: 35,208 ms (>30s)",Importación histórica,35208,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-16 08:41:29,CLARO,Activación Servicios,TIMEOUT_35742ms,"Respuesta lenta: 35,742 ms (>30s)",Importación histórica,35742,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-16 08:41:29,CLARO,Activación Servicios,TIMEOUT_35705ms,"Respuesta lenta: 35,705 ms (>30s)",Importación histórica,35705,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 16:22:22,CLARO,Activación Servicios,TIMEOUT_39426ms,"Respuesta lenta: 39,426 ms (>30s)",Importación histórica,39426,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 14:37:44,CLARO,Activación Servicios,TIMEOUT_36460ms,"Respuesta lenta: 36,460 ms (>30s)",Importación histórica,36460,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 14:37:44,CLARO,Activación Servicios,TIMEOUT_36282ms,"Respuesta lenta: 36,282 ms (>30s)",Importación histórica,36282,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 11:56:36,CLARO,Activación Servicios,TIMEOUT_34341ms,"Respuesta lenta: 34,341 ms (>30s)",Importación histórica,34341,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 10:38:47,CLARO,Activación Servicios,TIMEOUT_41329ms,"Respuesta lenta: 41,329 ms (>30s)",Importación histórica,41329,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 10:31:31,CLARO,Activación Servicios,TIMEOUT_30296ms,"Respuesta lenta: 30,296 ms (>30s)",Importación histórica,30296,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 10:31:31,CLARO,Activación Servicios,TIMEOUT_30098ms,"Respuesta lenta: 30,098 ms (>30s)",Importación histórica,30098,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 10:02:11,CLARO,Activación Servicios,TIMEOUT_39104ms,"Respuesta lenta: 39,104 ms (>30s)",Importación histórica,39104,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 10:02:11,CLARO,Activación Servicios,TIMEOUT_38300ms,"Respuesta lenta: 38,300 ms (>30s)",Importación histórica,38300,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 10:00:58,CLARO,Activación Servicios,TIMEOUT_31067ms,"Respuesta lenta: 31,067 ms (>30s)",Importación histórica,31067,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 10:00:50,CLARO,Activación Servicios,TIMEOUT_35734ms,"Respuesta lenta: 35,734 ms (>30s)",Importación histórica,35734,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 08:36:34,CLARO,Activación Servicios,TIMEOUT_35578ms,"Respuesta lenta: 35,578 ms (>30s)",Importación histórica,35578,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 07:19:24,CLARO,Activación Servicios,TIMEOUT_36391ms,"Respuesta lenta: 36,391 ms (>30s)",Importación histórica,36391,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-15 05:36:05,CLARO,Consulta Disponibilidad,TIMEOUT_42296ms,"Respuesta lenta: 42,296 ms (>30s)",Importación histórica,42296,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-14 13:31:22,CLARO,Activación Servicios,TIMEOUT_36274ms,"Respuesta lenta: 36,274 ms (>30s)",Importación histórica,36274,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-14 13:05:48,CLARO,Activación Servicios,TIMEOUT_30821ms,"Respuesta lenta: 30,821 ms (>30s)",Importación histórica,30821,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-14 13:05:48,CLARO,Activación Servicios,TIMEOUT_30745ms,"Respuesta lenta: 30,745 ms (>30s)",Importación histórica,30745,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-14 10:05:32,CLARO,Activación Servicios,TIMEOUT_30830ms,"Respuesta lenta: 30,830 ms (>30s)",Importación histórica,30830,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-14 10:05:24,CLARO,Activación Servicios,TIMEOUT_30602ms,"Respuesta lenta: 30,602 ms (>30s)",Importación histórica,30602,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-14 08:27:54,CLARO,Activación Servicios,TIMEOUT_34098ms,"Respuesta lenta: 34,098 ms (>30s)",Importación histórica,34098,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-13 09:59:29,CLARO,Activación Servicios,TIMEOUT_33026ms,"Respuesta lenta: 33,026 ms (>30s)",Importación histórica,33026,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-13 09:59:16,CLARO,Activación Servicios,TIMEOUT_35432ms,"Respuesta lenta: 35,432 ms (>30s)",Importación histórica,35432,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-13 09:58:43,CLARO,Activación ONT,TIMEOUT_33066ms,"Respuesta lenta: 33,066 ms (>30s)",Importación histórica,33066,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-13 09:58:41,CLARO,Activación ONT,TIMEOUT_34466ms,"Respuesta lenta: 34,466 ms (>30s)",Importación histórica,34466,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-13 09:37:13,CLARO,Activación Servicios,TIMEOUT_30392ms,"Respuesta lenta: 30,392 ms (>30s)",Importación histórica,30392,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-13 09:20:34,CLARO,Activación Servicios,TIMEOUT_34649ms,"Respuesta lenta: 34,649 ms (>30s)",Importación histórica,34649,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-11 14:05:53,CLARO,Activación Servicios,TIMEOUT_37621ms,"Respuesta lenta: 37,621 ms (>30s)",Importación histórica,37621,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-11 12:01:46,CLARO,Activación Servicios,TIMEOUT_30212ms,"Respuesta lenta: 30,212 ms (>30s)",Importación histórica,30212,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-11 10:11:07,CLARO,Activación Servicios,TIMEOUT_33551ms,"Respuesta lenta: 33,551 ms (>30s)",Importación histórica,33551,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-11 09:26:40,CLARO,Activación Servicios,TIMEOUT_31953ms,"Respuesta lenta: 31,953 ms (>30s)",Importación histórica,31953,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-11 09:02:33,CLARO,Activación Servicios,TIMEOUT_33255ms,"Respuesta lenta: 33,255 ms (>30s)",Importación histórica,33255,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-11 09:02:33,CLARO,Activación Servicios,TIMEOUT_32908ms,"Respuesta lenta: 32,908 ms (>30s)",Importación histórica,32908,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-10 16:23:45,CLARO,Activación Servicios,TIMEOUT_30292ms,"Respuesta lenta: 30,292 ms (>30s)",Importación histórica,30292,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-10 11:30:09,CLARO,Activación Servicios,TIMEOUT_39686ms,"Respuesta lenta: 39,686 ms (>30s)",Importación histórica,39686,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-10 11:18:27,CLARO,Activación Servicios,TIMEOUT_35670ms,"Respuesta lenta: 35,670 ms (>30s)",Importación histórica,35670,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 15:50:37,CLARO,Activación Servicios,TIMEOUT_42482ms,"Respuesta lenta: 42,482 ms (>30s)",Importación histórica,42482,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 15:50:37,CLARO,Activación Servicios,TIMEOUT_42390ms,"Respuesta lenta: 42,390 ms (>30s)",Importación histórica,42390,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 15:50:16,CLARO,Activación Servicios,TIMEOUT_43247ms,"Respuesta lenta: 43,247 ms (>30s)",Importación histórica,43247,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 15:43:12,CLARO,Activación Servicios,TIMEOUT_36821ms,"Respuesta lenta: 36,821 ms (>30s)",Importación histórica,36821,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 15:43:11,CLARO,Activación Servicios,TIMEOUT_39574ms,"Respuesta lenta: 39,574 ms (>30s)",Importación histórica,39574,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 15:42:46,CLARO,Activación Servicios,TIMEOUT_39707ms,"Respuesta lenta: 39,707 ms (>30s)",Importación histórica,39707,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 15:42:46,CLARO,Activación Servicios,TIMEOUT_42918ms,"Respuesta lenta: 42,918 ms (>30s)",Importación histórica,42918,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 14:45:08,CLARO,Cambio ONT,TIMEOUT_35299ms,"Respuesta lenta: 35,299 ms (>30s)",Importación histórica,35299,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 14:45:08,CLARO,Cambio ONT,TIMEOUT_35948ms,"Respuesta lenta: 35,948 ms (>30s)",Importación histórica,35948,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 11:02:33,CLARO,Activación Servicios,TIMEOUT_41224ms,"Respuesta lenta: 41,224 ms (>30s)",Importación histórica,41224,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 11:02:33,CLARO,Activación Servicios,TIMEOUT_40391ms,"Respuesta lenta: 40,391 ms (>30s)",Importación histórica,40391,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 09:11:54,CLARO,Activación Servicios,TIMEOUT_31344ms,"Respuesta lenta: 31,344 ms (>30s)",Importación histórica,31344,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 09:11:54,CLARO,Activación Servicios,TIMEOUT_32306ms,"Respuesta lenta: 32,306 ms (>30s)",Importación histórica,32306,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 09:11:23,CLARO,Activación ONT,TIMEOUT_30663ms,"Respuesta lenta: 30,663 ms (>30s)",Importación histórica,30663,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 09:11:17,CLARO,Activación ONT,TIMEOUT_36639ms,"Respuesta lenta: 36,639 ms (>30s)",Importación histórica,36639,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 09:11:14,CLARO,Activación ONT,TIMEOUT_41095ms,"Respuesta lenta: 41,095 ms (>30s)",Importación histórica,41095,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-09 09:11:11,CLARO,Activación ONT,TIMEOUT_42734ms,"Respuesta lenta: 42,734 ms (>30s)",Importación histórica,42734,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-08 11:03:34,CLARO,Activación Servicios,TIMEOUT_30581ms,"Respuesta lenta: 30,581 ms (>30s)",Importación histórica,30581,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 16:21:01,CLARO,Activación ONT,TIMEOUT_44298ms,"Respuesta lenta: 44,298 ms (>30s)",Importación histórica,44298,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 15:56:55,CLARO,Activación ONT,TIMEOUT_34276ms,"Respuesta lenta: 34,276 ms (>30s)",Importación histórica,34276,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 15:36:13,CLARO,Activación Servicios,TIMEOUT_35439ms,"Respuesta lenta: 35,439 ms (>30s)",Importación histórica,35439,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 15:36:13,CLARO,Activación Servicios,TIMEOUT_35205ms,"Respuesta lenta: 35,205 ms (>30s)",Importación histórica,35205,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 13:58:43,CLARO,Activación Servicios,TIMEOUT_31127ms,"Respuesta lenta: 31,127 ms (>30s)",Importación histórica,31127,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 12:26:03,CLARO,Activación Servicios,TIMEOUT_39511ms,"Respuesta lenta: 39,511 ms (>30s)",Importación histórica,39511,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 12:26:03,CLARO,Activación Servicios,TIMEOUT_39913ms,"Respuesta lenta: 39,913 ms (>30s)",Importación histórica,39913,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 09:28:10,CLARO,Activación Servicios,TIMEOUT_44927ms,"Respuesta lenta: 44,927 ms (>30s)",Importación histórica,44927,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 08:27:00,CLARO,Activación Servicios,TIMEOUT_31542ms,"Respuesta lenta: 31,542 ms (>30s)",Importación histórica,31542,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 08:26:59,CLARO,Activación Servicios,TIMEOUT_41957ms,"Respuesta lenta: 41,957 ms (>30s)",Importación histórica,41957,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 08:26:59,CLARO,Activación Servicios,TIMEOUT_42015ms,"Respuesta lenta: 42,015 ms (>30s)",Importación histórica,42015,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 08:26:59,CLARO,Activación Servicios,TIMEOUT_31327ms,"Respuesta lenta: 31,327 ms (>30s)",Importación histórica,31327,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 08:26:28,CLARO,Activación ONT,TIMEOUT_31205ms,"Respuesta lenta: 31,205 ms (>30s)",Importación histórica,31205,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-07 08:04:57,CLARO,Activación Servicios,TIMEOUT_32283ms,"Respuesta lenta: 32,283 ms (>30s)",Importación histórica,32283,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-06 14:12:44,CLARO,Activación Servicios,TIMEOUT_34676ms,"Respuesta lenta: 34,676 ms (>30s)",Importación histórica,34676,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-06 11:26:16,CLARO,Activación Servicios,TIMEOUT_37519ms,"Respuesta lenta: 37,519 ms (>30s)",Importación histórica,37519,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-06 09:57:47,CLARO,Activación Servicios,TIMEOUT_30242ms,"Respuesta lenta: 30,242 ms (>30s)",Importación histórica,30242,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-06 09:57:47,CLARO,Activación Servicios,TIMEOUT_37220ms,"Respuesta lenta: 37,220 ms (>30s)",Importación histórica,37220,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-06 09:57:47,CLARO,Activación Servicios,TIMEOUT_37156ms,"Respuesta lenta: 37,156 ms (>30s)",Importación histórica,37156,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-06 09:05:15,CLARO,Consulta Disponibilidad,TIMEOUT_30893ms,"Respuesta lenta: 30,893 ms (>30s)",Importación histórica,30893,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:32:15,CLARO,Reserva,TIMEOUT_41319ms,"Respuesta lenta: 41,319 ms (>30s)",Importación histórica,41319,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:32:15,CLARO,Reserva,TIMEOUT_41429ms,"Respuesta lenta: 41,429 ms (>30s)",Importación histórica,41429,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:32:15,CLARO,Reserva,TIMEOUT_41640ms,"Respuesta lenta: 41,640 ms (>30s)",Importación histórica,41640,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:32:14,CLARO,Reserva,TIMEOUT_41847ms,"Respuesta lenta: 41,847 ms (>30s)",Importación histórica,41847,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:32:14,CLARO,Reserva,TIMEOUT_42039ms,"Respuesta lenta: 42,039 ms (>30s)",Importación histórica,42039,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:32:13,CLARO,Reserva,TIMEOUT_42682ms,"Respuesta lenta: 42,682 ms (>30s)",Importación histórica,42682,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:32:13,CLARO,Reserva,TIMEOUT_42859ms,"Respuesta lenta: 42,859 ms (>30s)",Importación histórica,42859,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:32:13,CLARO,Reserva,TIMEOUT_43358ms,"Respuesta lenta: 43,358 ms (>30s)",Importación histórica,43358,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:32:12,CLARO,Reserva,TIMEOUT_43393ms,"Respuesta lenta: 43,393 ms (>30s)",Importación histórica,43393,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:31:58,CLARO,Reserva,TIMEOUT_43234ms,"Respuesta lenta: 43,234 ms (>30s)",Importación histórica,43234,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:31:58,CLARO,Reserva,TIMEOUT_42692ms,"Respuesta lenta: 42,692 ms (>30s)",Importación histórica,42692,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:31:57,CLARO,Reserva,TIMEOUT_42198ms,"Respuesta lenta: 42,198 ms (>30s)",Importación histórica,42198,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:31:57,CLARO,Reserva,TIMEOUT_42000ms,"Respuesta lenta: 42,000 ms (>30s)",Importación histórica,42000,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:31:57,CLARO,Reserva,TIMEOUT_41778ms,"Respuesta lenta: 41,778 ms (>30s)",Importación histórica,41778,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:31:56,CLARO,Reserva,TIMEOUT_41421ms,"Respuesta lenta: 41,421 ms (>30s)",Importación histórica,41421,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:31:56,CLARO,Reserva,TIMEOUT_39016ms,"Respuesta lenta: 39,016 ms (>30s)",Importación histórica,39016,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:31:56,CLARO,Reserva,TIMEOUT_38974ms,"Respuesta lenta: 38,974 ms (>30s)",Importación histórica,38974,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 21:31:55,CLARO,Reserva,TIMEOUT_31847ms,"Respuesta lenta: 31,847 ms (>30s)",Importación histórica,31847,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 14:08:22,CLARO,Activación Servicios,TIMEOUT_36251ms,"Respuesta lenta: 36,251 ms (>30s)",Importación histórica,36251,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 14:08:22,CLARO,Activación Servicios,TIMEOUT_36260ms,"Respuesta lenta: 36,260 ms (>30s)",Importación histórica,36260,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 11:33:42,CLARO,Activación Servicios,TIMEOUT_33790ms,"Respuesta lenta: 33,790 ms (>30s)",Importación histórica,33790,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 11:33:34,CLARO,Activación Servicios,TIMEOUT_43056ms,"Respuesta lenta: 43,056 ms (>30s)",Importación histórica,43056,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 10:20:51,CLARO,Activación Servicios,TIMEOUT_41485ms,"Respuesta lenta: 41,485 ms (>30s)",Importación histórica,41485,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 10:20:51,CLARO,Activación Servicios,TIMEOUT_37298ms,"Respuesta lenta: 37,298 ms (>30s)",Importación histórica,37298,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 10:12:25,CLARO,Activación Servicios,TIMEOUT_30552ms,"Respuesta lenta: 30,552 ms (>30s)",Importación histórica,30552,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 10:12:25,CLARO,Activación Servicios,TIMEOUT_31186ms,"Respuesta lenta: 31,186 ms (>30s)",Importación histórica,31186,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 10:02:59,CLARO,Activación Servicios,TIMEOUT_35915ms,"Respuesta lenta: 35,915 ms (>30s)",Importación histórica,35915,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 09:02:00,CLARO,Activación Servicios,TIMEOUT_30886ms,"Respuesta lenta: 30,886 ms (>30s)",Importación histórica,30886,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 09:02:00,CLARO,Activación Servicios,TIMEOUT_30725ms,"Respuesta lenta: 30,725 ms (>30s)",Importación histórica,30725,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 09:01:59,CLARO,Activación Servicios,TIMEOUT_30872ms,"Respuesta lenta: 30,872 ms (>30s)",Importación histórica,30872,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 09:01:58,CLARO,Activación Servicios,TIMEOUT_38749ms,"Respuesta lenta: 38,749 ms (>30s)",Importación histórica,38749,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 09:01:52,CLARO,Activación Servicios,TIMEOUT_44488ms,"Respuesta lenta: 44,488 ms (>30s)",Importación histórica,44488,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 09:01:26,CLARO,Activación ONT,TIMEOUT_33855ms,"Respuesta lenta: 33,855 ms (>30s)",Importación histórica,33855,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 09:01:26,CLARO,Activación ONT,TIMEOUT_33072ms,"Respuesta lenta: 33,072 ms (>30s)",Importación histórica,33072,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 00:02:53,CLARO,Reserva,TIMEOUT_43948ms,"Respuesta lenta: 43,948 ms (>30s)",Importación histórica,43948,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 00:02:53,CLARO,Reserva,TIMEOUT_43972ms,"Respuesta lenta: 43,972 ms (>30s)",Importación histórica,43972,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 00:02:53,CLARO,Reserva,TIMEOUT_44378ms,"Respuesta lenta: 44,378 ms (>30s)",Importación histórica,44378,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 00:02:53,CLARO,Reserva,TIMEOUT_44208ms,"Respuesta lenta: 44,208 ms (>30s)",Importación histórica,44208,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 00:02:53,CLARO,Reserva,TIMEOUT_44369ms,"Respuesta lenta: 44,369 ms (>30s)",Importación histórica,44369,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 00:02:53,CLARO,Reserva,TIMEOUT_44289ms,"Respuesta lenta: 44,289 ms (>30s)",Importación histórica,44289,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-04 00:02:53,CLARO,Reserva,TIMEOUT_44287ms,"Respuesta lenta: 44,287 ms (>30s)",Importación histórica,44287,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-01 21:33:12,CLARO,Reserva,TIMEOUT_41582ms,"Respuesta lenta: 41,582 ms (>30s)",Importación histórica,41582,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-01 15:49:58,CLARO,Activación Servicios,TIMEOUT_38482ms,"Respuesta lenta: 38,482 ms (>30s)",Importación histórica,38482,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-01 15:49:58,CLARO,Activación Servicios,TIMEOUT_38413ms,"Respuesta lenta: 38,413 ms (>30s)",Importación histórica,38413,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-01 10:03:31,CLARO,Activación Servicios,TIMEOUT_32492ms,"Respuesta lenta: 32,492 ms (>30s)",Importación histórica,32492,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-01 08:15:37,CLARO,Activación Servicios,TIMEOUT_30390ms,"Respuesta lenta: 30,390 ms (>30s)",Importación histórica,30390,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-01 08:15:37,CLARO,Activación Servicios,TIMEOUT_40278ms,"Respuesta lenta: 40,278 ms (>30s)",Importación histórica,40278,SUCCESS,200.0
+2026-04-29 12:07:19,2026-04-01 08:15:36,CLARO,Activación Servicios,TIMEOUT_40430ms,"Respuesta lenta: 40,430 ms (>30s)",Importación histórica,40430,SUCCESS,200.0
+2026-04-29 12:07:19,2026-03-31 15:45:04,CLARO,Activación Servicios,TIMEOUT_37543ms,"Respuesta lenta: 37,543 ms (>30s)",Importación histórica,37543,SUCCESS,200.0
+2026-04-29 12:07:19,2026-03-31 15:19:40,CLARO,Activación Servicios,TIMEOUT_33608ms,"Respuesta lenta: 33,608 ms (>30s)",Importación histórica,33608,SUCCESS,200.0
+2026-04-29 12:07:19,2026-03-30 18:58:30,CLARO,Activación Servicios,TIMEOUT_32491ms,"Respuesta lenta: 32,491 ms (>30s)",Importación histórica,32491,SUCCESS,200.0
+2026-04-29 12:07:19,2026-03-30 16:38:30,CLARO,Activación Servicios,TIMEOUT_30948ms,"Respuesta lenta: 30,948 ms (>30s)",Importación histórica,30948,SUCCESS,200.0
+2026-04-29 12:07:19,2026-03-30 12:53:04,CLARO,Activación Servicios,TIMEOUT_30968ms,"Respuesta lenta: 30,968 ms (>30s)",Importación histórica,30968,SUCCESS,200.0
+2026-04-29 12:07:19,2026-03-30 12:35:37,CLARO,Activación Servicios,TIMEOUT_42244ms,"Respuesta lenta: 42,244 ms (>30s)",Importación histórica,42244,SUCCESS,200.0
+2026-04-29 12:07:19,2026-03-30 12:18:51,CLARO,Activación Servicios,TIMEOUT_32743ms,"Respuesta lenta: 32,743 ms (>30s)",Importación histórica,32743,SUCCESS,200.0
+2026-04-29 12:07:19,2026-03-30 12:18:36,CLARO,Activación Servicios,TIMEOUT_45033ms,"Respuesta lenta: 45,033 ms (>30s)",Importación histórica,45033,FAILED,500.0
+2026-04-29 12:07:19,2026-03-30 12:18:27,CLARO,Activación Servicios,TIMEOUT_43878ms,"Respuesta lenta: 43,878 ms (>30s)",Importación histórica,43878,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-30 11:55:57,CLARO,Activación Servicios,TIMEOUT_32660ms,"Respuesta lenta: 32,660 ms (>30s)",Importación histórica,32660,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-30 11:55:57,CLARO,Activación Servicios,TIMEOUT_32635ms,"Respuesta lenta: 32,635 ms (>30s)",Importación histórica,32635,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-30 11:07:32,CLARO,Activación Servicios,TIMEOUT_40706ms,"Respuesta lenta: 40,706 ms (>30s)",Importación histórica,40706,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-30 11:07:32,CLARO,Activación Servicios,TIMEOUT_39841ms,"Respuesta lenta: 39,841 ms (>30s)",Importación histórica,39841,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-30 11:03:23,CLARO,Activación Servicios,TIMEOUT_37753ms,"Respuesta lenta: 37,753 ms (>30s)",Importación histórica,37753,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-30 11:03:23,CLARO,Activación Servicios,TIMEOUT_37530ms,"Respuesta lenta: 37,530 ms (>30s)",Importación histórica,37530,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-30 09:09:03,CLARO,Activación Servicios,TIMEOUT_33952ms,"Respuesta lenta: 33,952 ms (>30s)",Importación histórica,33952,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-29 09:51:01,CLARO,Activación Servicios,TIMEOUT_30563ms,"Respuesta lenta: 30,563 ms (>30s)",Importación histórica,30563,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 14:43:20,CLARO,Activación Servicios,TIMEOUT_37969ms,"Respuesta lenta: 37,969 ms (>30s)",Importación histórica,37969,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 14:43:20,CLARO,Activación Servicios,TIMEOUT_38586ms,"Respuesta lenta: 38,586 ms (>30s)",Importación histórica,38586,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 14:21:01,CLARO,Activación Servicios,TIMEOUT_32825ms,"Respuesta lenta: 32,825 ms (>30s)",Importación histórica,32825,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 14:21:00,CLARO,Activación Servicios,TIMEOUT_32642ms,"Respuesta lenta: 32,642 ms (>30s)",Importación histórica,32642,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 13:09:56,CLARO,Cambio ONT,TIMEOUT_37978ms,"Respuesta lenta: 37,978 ms (>30s)",Importación histórica,37978,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 13:09:56,CLARO,Cambio ONT,TIMEOUT_38428ms,"Respuesta lenta: 38,428 ms (>30s)",Importación histórica,38428,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 11:33:30,CLARO,Activación Servicios,TIMEOUT_33165ms,"Respuesta lenta: 33,165 ms (>30s)",Importación histórica,33165,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 11:33:30,CLARO,Activación Servicios,TIMEOUT_33134ms,"Respuesta lenta: 33,134 ms (>30s)",Importación histórica,33134,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 11:25:24,CLARO,Activación Servicios,TIMEOUT_39191ms,"Respuesta lenta: 39,191 ms (>30s)",Importación histórica,39191,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 11:25:24,CLARO,Activación Servicios,TIMEOUT_38612ms,"Respuesta lenta: 38,612 ms (>30s)",Importación histórica,38612,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 09:00:09,CLARO,Activación Servicios,TIMEOUT_31886ms,"Respuesta lenta: 31,886 ms (>30s)",Importación histórica,31886,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-28 09:00:09,CLARO,Activación Servicios,TIMEOUT_31831ms,"Respuesta lenta: 31,831 ms (>30s)",Importación histórica,31831,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-27 16:05:45,CLARO,Activación Servicios,TIMEOUT_30570ms,"Respuesta lenta: 30,570 ms (>30s)",Importación histórica,30570,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-27 14:35:35,CLARO,Activación Servicios,TIMEOUT_40342ms,"Respuesta lenta: 40,342 ms (>30s)",Importación histórica,40342,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-27 13:13:40,CLARO,Activación Servicios,TIMEOUT_33037ms,"Respuesta lenta: 33,037 ms (>30s)",Importación histórica,33037,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-27 12:41:12,CLARO,Activación Servicios,TIMEOUT_31193ms,"Respuesta lenta: 31,193 ms (>30s)",Importación histórica,31193,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-27 12:16:52,CLARO,Cambio ONT,TIMEOUT_33610ms,"Respuesta lenta: 33,610 ms (>30s)",Importación histórica,33610,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-27 12:16:52,CLARO,Cambio ONT,TIMEOUT_34095ms,"Respuesta lenta: 34,095 ms (>30s)",Importación histórica,34095,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-27 08:52:46,CLARO,Activación Servicios,TIMEOUT_30399ms,"Respuesta lenta: 30,399 ms (>30s)",Importación histórica,30399,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-26 09:09:20,CLARO,Activación Servicios,TIMEOUT_33749ms,"Respuesta lenta: 33,749 ms (>30s)",Importación histórica,33749,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-25 17:34:43,CLARO,Consulta Disponibilidad,TIMEOUT_35279ms,"Respuesta lenta: 35,279 ms (>30s)",Importación histórica,35279,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-25 10:45:13,CLARO,Activación Servicios,TIMEOUT_31602ms,"Respuesta lenta: 31,602 ms (>30s)",Importación histórica,31602,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-25 10:45:13,CLARO,Activación Servicios,TIMEOUT_31291ms,"Respuesta lenta: 31,291 ms (>30s)",Importación histórica,31291,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-25 08:43:04,CLARO,Activación ONT,TIMEOUT_45020ms,"Respuesta lenta: 45,020 ms (>30s)",Importación histórica,45020,FAILED,500.0
+2026-04-29 12:18:28,2026-03-24 14:55:56,CLARO,Activación Servicios,TIMEOUT_31850ms,"Respuesta lenta: 31,850 ms (>30s)",Importación histórica,31850,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-24 14:55:41,CLARO,Activación Servicios,TIMEOUT_33838ms,"Respuesta lenta: 33,838 ms (>30s)",Importación histórica,33838,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-24 14:54:55,CLARO,Activación Servicios,TIMEOUT_38302ms,"Respuesta lenta: 38,302 ms (>30s)",Importación histórica,38302,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-24 14:51:24,CLARO,Activación Servicios,TIMEOUT_30765ms,"Respuesta lenta: 30,765 ms (>30s)",Importación histórica,30765,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-24 14:51:24,CLARO,Activación Servicios,TIMEOUT_31129ms,"Respuesta lenta: 31,129 ms (>30s)",Importación histórica,31129,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-24 14:46:09,CLARO,Reserva,TIMEOUT_42697ms,"Respuesta lenta: 42,697 ms (>30s)",Importación histórica,42697,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-24 11:20:50,CLARO,Cambio ONT,TIMEOUT_34740ms,"Respuesta lenta: 34,740 ms (>30s)",Importación histórica,34740,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-24 11:20:50,CLARO,Cambio ONT,TIMEOUT_35108ms,"Respuesta lenta: 35,108 ms (>30s)",Importación histórica,35108,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-24 10:25:34,CLARO,Activación ONT,TIMEOUT_45027ms,"Respuesta lenta: 45,027 ms (>30s)",Importación histórica,45027,FAILED,500.0
+2026-04-29 12:18:28,2026-03-23 14:41:56,CLARO,Consulta Disponibilidad,TIMEOUT_45191ms,"Respuesta lenta: 45,191 ms (>30s)",Importación histórica,45191,FAILED,500.0
+2026-04-29 12:18:28,2026-03-21 14:03:14,CLARO,Activación Servicios,TIMEOUT_37591ms,"Respuesta lenta: 37,591 ms (>30s)",Importación histórica,37591,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-21 13:20:36,CLARO,Activación Servicios,TIMEOUT_33772ms,"Respuesta lenta: 33,772 ms (>30s)",Importación histórica,33772,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-21 13:20:35,CLARO,Activación Servicios,TIMEOUT_33669ms,"Respuesta lenta: 33,669 ms (>30s)",Importación histórica,33669,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-21 09:13:15,CLARO,Cambio ONT,TIMEOUT_38504ms,"Respuesta lenta: 38,504 ms (>30s)",Importación histórica,38504,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-21 09:13:15,CLARO,Cambio ONT,TIMEOUT_39271ms,"Respuesta lenta: 39,271 ms (>30s)",Importación histórica,39271,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 21:35:39,CLARO,Terminación,TIMEOUT_32828ms,"Respuesta lenta: 32,828 ms (>30s)",Importación histórica,32828,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 21:35:32,CLARO,Terminación,TIMEOUT_34902ms,"Respuesta lenta: 34,902 ms (>30s)",Importación histórica,34902,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 21:35:31,CLARO,Terminación,TIMEOUT_36035ms,"Respuesta lenta: 36,035 ms (>30s)",Importación histórica,36035,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 21:35:30,CLARO,Terminación,TIMEOUT_36922ms,"Respuesta lenta: 36,922 ms (>30s)",Importación histórica,36922,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 21:35:30,CLARO,Terminación,TIMEOUT_38255ms,"Respuesta lenta: 38,255 ms (>30s)",Importación histórica,38255,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 21:35:29,CLARO,Terminación,TIMEOUT_38720ms,"Respuesta lenta: 38,720 ms (>30s)",Importación histórica,38720,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 21:35:29,CLARO,Terminación,TIMEOUT_43377ms,"Respuesta lenta: 43,377 ms (>30s)",Importación histórica,43377,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 21:35:29,CLARO,Terminación,TIMEOUT_42960ms,"Respuesta lenta: 42,960 ms (>30s)",Importación histórica,42960,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 21:35:25,CLARO,Terminación,TIMEOUT_43186ms,"Respuesta lenta: 43,186 ms (>30s)",Importación histórica,43186,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 17:54:13,CLARO,Activación ONT,TIMEOUT_41695ms,"Respuesta lenta: 41,695 ms (>30s)",Importación histórica,41695,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 11:03:59,CLARO,Activación Servicios,TIMEOUT_30032ms,"Respuesta lenta: 30,032 ms (>30s)",Importación histórica,30032,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 09:27:26,CLARO,Activación Servicios,TIMEOUT_31859ms,"Respuesta lenta: 31,859 ms (>30s)",Importación histórica,31859,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 09:24:51,CLARO,Activación Servicios,TIMEOUT_40355ms,"Respuesta lenta: 40,355 ms (>30s)",Importación histórica,40355,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 09:24:51,CLARO,Activación Servicios,TIMEOUT_39930ms,"Respuesta lenta: 39,930 ms (>30s)",Importación histórica,39930,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 08:49:39,CLARO,Activación ONT,TIMEOUT_31307ms,"Respuesta lenta: 31,307 ms (>30s)",Importación histórica,31307,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-20 08:30:45,CLARO,Activación Servicios,TIMEOUT_36490ms,"Respuesta lenta: 36,490 ms (>30s)",Importación histórica,36490,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-19 16:19:12,CLARO,Activación Servicios,TIMEOUT_40736ms,"Respuesta lenta: 40,736 ms (>30s)",Importación histórica,40736,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-19 14:41:46,CLARO,Activación Servicios,TIMEOUT_34223ms,"Respuesta lenta: 34,223 ms (>30s)",Importación histórica,34223,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-19 11:21:09,CLARO,Activación Servicios,TIMEOUT_32461ms,"Respuesta lenta: 32,461 ms (>30s)",Importación histórica,32461,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-19 11:05:01,CLARO,Activación Servicios,TIMEOUT_35778ms,"Respuesta lenta: 35,778 ms (>30s)",Importación histórica,35778,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-19 11:04:13,CLARO,Activación ONT,TIMEOUT_30947ms,"Respuesta lenta: 30,947 ms (>30s)",Importación histórica,30947,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-19 11:04:11,CLARO,Activación ONT,TIMEOUT_32654ms,"Respuesta lenta: 32,654 ms (>30s)",Importación histórica,32654,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-19 11:04:07,CLARO,Activación ONT,TIMEOUT_37331ms,"Respuesta lenta: 37,331 ms (>30s)",Importación histórica,37331,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-19 11:04:01,CLARO,Activación ONT,TIMEOUT_43094ms,"Respuesta lenta: 43,094 ms (>30s)",Importación histórica,43094,SUCCESS,200.0
+2026-04-29 12:18:29,2026-03-19 10:49:39,ETB,Activación Servicios,TIMEOUT_45026ms,"Respuesta lenta: 45,026 ms (>30s)",Importación histórica,45026,FAILED,500.0
+2026-04-29 12:18:28,2026-03-18 14:32:36,CLARO,Activación Servicios,TIMEOUT_30272ms,"Respuesta lenta: 30,272 ms (>30s)",Importación histórica,30272,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-18 14:32:30,CLARO,Activación Servicios,TIMEOUT_30131ms,"Respuesta lenta: 30,131 ms (>30s)",Importación histórica,30131,SUCCESS,200.0
+2026-04-29 12:18:29,2026-03-18 14:32:19,ETB,Activación Servicios,TIMEOUT_37681ms,"Respuesta lenta: 37,681 ms (>30s)",Importación histórica,37681,SUCCESS,200.0
+2026-04-29 12:18:29,2026-03-18 10:34:17,ETB,Consulta niveles,TIMEOUT_45023ms,"Respuesta lenta: 45,023 ms (>30s)",Importación histórica,45023,FAILED,500.0
+2026-04-29 12:18:28,2026-03-18 09:15:30,CLARO,Activación Servicios,TIMEOUT_30891ms,"Respuesta lenta: 30,891 ms (>30s)",Importación histórica,30891,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-18 09:15:30,CLARO,Activación Servicios,TIMEOUT_30867ms,"Respuesta lenta: 30,867 ms (>30s)",Importación histórica,30867,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-17 15:49:40,CLARO,Activación Servicios,TIMEOUT_34851ms,"Respuesta lenta: 34,851 ms (>30s)",Importación histórica,34851,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-17 09:58:21,CLARO,Activación ONT,TIMEOUT_34650ms,"Respuesta lenta: 34,650 ms (>30s)",Importación histórica,34650,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-17 08:55:54,CLARO,Activación Servicios,TIMEOUT_32786ms,"Respuesta lenta: 32,786 ms (>30s)",Importación histórica,32786,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-16 14:14:24,CLARO,Activación ONT,TIMEOUT_35779ms,"Respuesta lenta: 35,779 ms (>30s)",Importación histórica,35779,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-16 13:59:28,CLARO,Activación ONT,TIMEOUT_35702ms,"Respuesta lenta: 35,702 ms (>30s)",Importación histórica,35702,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-14 12:57:05,CLARO,Cambio ONT,TIMEOUT_30226ms,"Respuesta lenta: 30,226 ms (>30s)",Importación histórica,30226,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-14 10:32:10,CLARO,Activación Servicios,TIMEOUT_30910ms,"Respuesta lenta: 30,910 ms (>30s)",Importación histórica,30910,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-14 09:51:37,CLARO,Activación Servicios,TIMEOUT_30442ms,"Respuesta lenta: 30,442 ms (>30s)",Importación histórica,30442,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-14 09:51:37,CLARO,Activación Servicios,TIMEOUT_30173ms,"Respuesta lenta: 30,173 ms (>30s)",Importación histórica,30173,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-14 09:02:16,CLARO,Activación Servicios,TIMEOUT_31994ms,"Respuesta lenta: 31,994 ms (>30s)",Importación histórica,31994,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-14 09:02:16,CLARO,Activación Servicios,TIMEOUT_42175ms,"Respuesta lenta: 42,175 ms (>30s)",Importación histórica,42175,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-13 11:38:58,CLARO,Activación Servicios,TIMEOUT_34011ms,"Respuesta lenta: 34,011 ms (>30s)",Importación histórica,34011,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-13 09:13:33,CLARO,Activación Servicios,TIMEOUT_31678ms,"Respuesta lenta: 31,678 ms (>30s)",Importación histórica,31678,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-13 08:33:13,CLARO,Activación Servicios,TIMEOUT_39998ms,"Respuesta lenta: 39,998 ms (>30s)",Importación histórica,39998,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-13 08:33:13,CLARO,Activación Servicios,TIMEOUT_40542ms,"Respuesta lenta: 40,542 ms (>30s)",Importación histórica,40542,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 16:51:29,CLARO,Activación ONT,TIMEOUT_32775ms,"Respuesta lenta: 32,775 ms (>30s)",Importación histórica,32775,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 16:51:27,CLARO,Activación ONT,TIMEOUT_34424ms,"Respuesta lenta: 34,424 ms (>30s)",Importación histórica,34424,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 15:46:55,CLARO,Activación Servicios,TIMEOUT_34051ms,"Respuesta lenta: 34,051 ms (>30s)",Importación histórica,34051,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 11:44:30,CLARO,Activación Servicios,TIMEOUT_44523ms,"Respuesta lenta: 44,523 ms (>30s)",Importación histórica,44523,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 11:37:47,CLARO,Activación ONT,TIMEOUT_33672ms,"Respuesta lenta: 33,672 ms (>30s)",Importación histórica,33672,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 11:37:44,CLARO,Activación ONT,TIMEOUT_36691ms,"Respuesta lenta: 36,691 ms (>30s)",Importación histórica,36691,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 10:23:15,CLARO,Activación Servicios,TIMEOUT_38406ms,"Respuesta lenta: 38,406 ms (>30s)",Importación histórica,38406,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 10:23:15,CLARO,Activación Servicios,TIMEOUT_35674ms,"Respuesta lenta: 35,674 ms (>30s)",Importación histórica,35674,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 10:22:43,CLARO,Activación ONT,TIMEOUT_32203ms,"Respuesta lenta: 32,203 ms (>30s)",Importación histórica,32203,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 10:22:41,CLARO,Activación ONT,TIMEOUT_33247ms,"Respuesta lenta: 33,247 ms (>30s)",Importación histórica,33247,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 10:09:34,CLARO,Activación Servicios,TIMEOUT_43019ms,"Respuesta lenta: 43,019 ms (>30s)",Importación histórica,43019,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 10:09:33,CLARO,Activación Servicios,TIMEOUT_44771ms,"Respuesta lenta: 44,771 ms (>30s)",Importación histórica,44771,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 09:46:39,CLARO,Activación Servicios,TIMEOUT_31055ms,"Respuesta lenta: 31,055 ms (>30s)",Importación histórica,31055,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 09:46:10,CLARO,Activación Servicios,TIMEOUT_38121ms,"Respuesta lenta: 38,121 ms (>30s)",Importación histórica,38121,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-12 09:46:10,CLARO,Activación Servicios,TIMEOUT_36586ms,"Respuesta lenta: 36,586 ms (>30s)",Importación histórica,36586,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-11 16:14:49,CLARO,Activación Servicios,TIMEOUT_31343ms,"Respuesta lenta: 31,343 ms (>30s)",Importación histórica,31343,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-11 16:14:49,CLARO,Activación Servicios,TIMEOUT_31276ms,"Respuesta lenta: 31,276 ms (>30s)",Importación histórica,31276,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-11 15:23:57,CLARO,Activación ONT,TIMEOUT_30111ms,"Respuesta lenta: 30,111 ms (>30s)",Importación histórica,30111,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-11 15:23:55,CLARO,Activación ONT,TIMEOUT_32209ms,"Respuesta lenta: 32,209 ms (>30s)",Importación histórica,32209,SUCCESS,200.0
+2026-04-29 12:18:29,2026-03-11 15:23:52,ETB,Activación ONT,TIMEOUT_35752ms,"Respuesta lenta: 35,752 ms (>30s)",Importación histórica,35752,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-11 14:37:49,CLARO,Activación ONT,TIMEOUT_31400ms,"Respuesta lenta: 31,400 ms (>30s)",Importación histórica,31400,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-11 13:39:30,CLARO,Activación Servicios,TIMEOUT_39183ms,"Respuesta lenta: 39,183 ms (>30s)",Importación histórica,39183,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-11 12:34:27,CLARO,Activación Servicios,TIMEOUT_35241ms,"Respuesta lenta: 35,241 ms (>30s)",Importación histórica,35241,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-11 11:13:37,CLARO,Activación Servicios,TIMEOUT_32710ms,"Respuesta lenta: 32,710 ms (>30s)",Importación histórica,32710,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 21:17:44,CLARO,Terminación,TIMEOUT_30269ms,"Respuesta lenta: 30,269 ms (>30s)",Importación histórica,30269,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 21:15:21,CLARO,Terminación,TIMEOUT_31058ms,"Respuesta lenta: 31,058 ms (>30s)",Importación histórica,31058,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 21:13:24,CLARO,Terminación,TIMEOUT_30867ms,"Respuesta lenta: 30,867 ms (>30s)",Importación histórica,30867,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 21:11:04,CLARO,Terminación,TIMEOUT_30685ms,"Respuesta lenta: 30,685 ms (>30s)",Importación histórica,30685,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 15:30:25,CLARO,Activación Servicios,TIMEOUT_32368ms,"Respuesta lenta: 32,368 ms (>30s)",Importación histórica,32368,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 09:39:35,CLARO,Activación Servicios,TIMEOUT_40811ms,"Respuesta lenta: 40,811 ms (>30s)",Importación histórica,40811,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 09:28:20,CLARO,Activación Servicios,TIMEOUT_32039ms,"Respuesta lenta: 32,039 ms (>30s)",Importación histórica,32039,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 09:08:16,CLARO,Activación Servicios,TIMEOUT_33306ms,"Respuesta lenta: 33,306 ms (>30s)",Importación histórica,33306,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 09:08:04,CLARO,Activación Servicios,TIMEOUT_44798ms,"Respuesta lenta: 44,798 ms (>30s)",Importación histórica,44798,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-10 09:07:52,CLARO,Activación Servicios,TIMEOUT_39150ms,"Respuesta lenta: 39,150 ms (>30s)",Importación histórica,39150,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-09 16:38:06,CLARO,Activación Servicios,TIMEOUT_34354ms,"Respuesta lenta: 34,354 ms (>30s)",Importación histórica,34354,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-09 16:38:06,CLARO,Activación Servicios,TIMEOUT_34254ms,"Respuesta lenta: 34,254 ms (>30s)",Importación histórica,34254,SUCCESS,200.0
+2026-04-29 12:18:28,2026-03-09 08:27:15,CLARO,Activación ONT,TIMEOUT_45110ms,"Respuesta lenta: 45,110 ms (>30s)",Importación histórica,45110,FAILED,500.0
+2026-04-29 12:18:29,2025-12-29 11:08:56,ETB,Estado servicio,TIMEOUT_30410ms,"Respuesta lenta: 30,410 ms (>30s)",Importación histórica,30410,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-26 08:27:17,ETB,Estado servicio,TIMEOUT_30396ms,"Respuesta lenta: 30,396 ms (>30s)",Importación histórica,30396,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-19 09:06:24,ETB,Activación Servicios,TIMEOUT_30683ms,"Respuesta lenta: 30,683 ms (>30s)",Importación histórica,30683,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-19 08:58:08,ETB,Activación Servicios,TIMEOUT_30544ms,"Respuesta lenta: 30,544 ms (>30s)",Importación histórica,30544,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-17 16:04:34,ETB,Activación ONT,TIMEOUT_32494ms,"Respuesta lenta: 32,494 ms (>30s)",Importación histórica,32494,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-17 15:52:31,ETB,Activación Servicios,TIMEOUT_35556ms,"Respuesta lenta: 35,556 ms (>30s)",Importación histórica,35556,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-17 15:49:28,ETB,Reconexión,TIMEOUT_34770ms,"Respuesta lenta: 34,770 ms (>30s)",Importación histórica,34770,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-17 15:49:28,ETB,Reconexión,TIMEOUT_34614ms,"Respuesta lenta: 34,614 ms (>30s)",Importación histórica,34614,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-17 15:49:28,ETB,Reconexión,TIMEOUT_34997ms,"Respuesta lenta: 34,997 ms (>30s)",Importación histórica,34997,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-17 15:49:28,ETB,Reconexión,TIMEOUT_39028ms,"Respuesta lenta: 39,028 ms (>30s)",Importación histórica,39028,SUCCESS,200.0
+2026-04-29 12:18:28,2025-12-17 15:40:14,CLARO,Activación Servicios,TIMEOUT_36488ms,"Respuesta lenta: 36,488 ms (>30s)",Importación histórica,36488,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-17 15:40:06,ETB,Activación ONT,TIMEOUT_30297ms,"Respuesta lenta: 30,297 ms (>30s)",Importación histórica,30297,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-17 11:32:57,ETB,Ancho de banda,TIMEOUT_44877ms,"Respuesta lenta: 44,877 ms (>30s)",Importación histórica,44877,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-17 11:32:56,ETB,Estado servicio,TIMEOUT_30661ms,"Respuesta lenta: 30,661 ms (>30s)",Importación histórica,30661,SUCCESS,200.0
+2026-04-29 12:18:28,2025-12-16 14:40:34,CLARO,Cambio ONT,TIMEOUT_31321ms,"Respuesta lenta: 31,321 ms (>30s)",Importación histórica,31321,SUCCESS,200.0
+2026-04-29 12:18:28,2025-12-16 14:40:33,CLARO,Cambio ONT,TIMEOUT_32815ms,"Respuesta lenta: 32,815 ms (>30s)",Importación histórica,32815,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 14:40:17,ETB,Consulta niveles,TIMEOUT_37515ms,"Respuesta lenta: 37,515 ms (>30s)",Importación histórica,37515,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 14:40:17,ETB,Ancho de banda,TIMEOUT_37953ms,"Respuesta lenta: 37,953 ms (>30s)",Importación histórica,37953,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 14:40:17,ETB,Estado servicio,TIMEOUT_31361ms,"Respuesta lenta: 31,361 ms (>30s)",Importación histórica,31361,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 14:40:17,ETB,Consulta niveles,TIMEOUT_37875ms,"Respuesta lenta: 37,875 ms (>30s)",Importación histórica,37875,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 14:40:17,ETB,Ancho de banda,TIMEOUT_38637ms,"Respuesta lenta: 38,637 ms (>30s)",Importación histórica,38637,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 14:40:17,ETB,Ancho de banda,TIMEOUT_38969ms,"Respuesta lenta: 38,969 ms (>30s)",Importación histórica,38969,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 14:40:16,ETB,Ancho de banda,TIMEOUT_39249ms,"Respuesta lenta: 39,249 ms (>30s)",Importación histórica,39249,SUCCESS,200.0
+2026-04-29 12:18:28,2025-12-16 13:58:36,CLARO,Activación Servicios,TIMEOUT_42949ms,"Respuesta lenta: 42,949 ms (>30s)",Importación histórica,42949,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 02:40:56,ETB,Suspensión,TIMEOUT_31514ms,"Respuesta lenta: 31,514 ms (>30s)",Importación histórica,31514,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 02:40:56,ETB,Suspensión,TIMEOUT_33028ms,"Respuesta lenta: 33,028 ms (>30s)",Importación histórica,33028,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 02:40:22,ETB,Suspensión,TIMEOUT_30399ms,"Respuesta lenta: 30,399 ms (>30s)",Importación histórica,30399,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-16 02:40:22,ETB,Suspensión,TIMEOUT_31946ms,"Respuesta lenta: 31,946 ms (>30s)",Importación histórica,31946,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 22:10:54,ETB,Suspensión,TIMEOUT_39572ms,"Respuesta lenta: 39,572 ms (>30s)",Importación histórica,39572,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 22:10:54,ETB,Suspensión,TIMEOUT_44711ms,"Respuesta lenta: 44,711 ms (>30s)",Importación histórica,44711,SUCCESS,200.0
+2026-04-29 12:18:28,2025-12-15 21:39:57,CLARO,Terminación,TIMEOUT_32765ms,"Respuesta lenta: 32,765 ms (>30s)",Importación histórica,32765,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 16:15:09,ETB,Activación Servicios,TIMEOUT_33437ms,"Respuesta lenta: 33,437 ms (>30s)",Importación histórica,33437,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 15:50:25,ETB,Activación ONT,TIMEOUT_42867ms,"Respuesta lenta: 42,867 ms (>30s)",Importación histórica,42867,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 14:38:40,ETB,Activación Servicios,TIMEOUT_31625ms,"Respuesta lenta: 31,625 ms (>30s)",Importación histórica,31625,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 13:50:25,ETB,Activación Servicios,TIMEOUT_30639ms,"Respuesta lenta: 30,639 ms (>30s)",Importación histórica,30639,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 12:52:48,ETB,Activación Servicios,TIMEOUT_30867ms,"Respuesta lenta: 30,867 ms (>30s)",Importación histórica,30867,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 08:46:05,ETB,Ancho de banda,TIMEOUT_34516ms,"Respuesta lenta: 34,516 ms (>30s)",Importación histórica,34516,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 08:45:53,ETB,Estado servicio,TIMEOUT_30711ms,"Respuesta lenta: 30,711 ms (>30s)",Importación histórica,30711,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 08:33:10,ETB,Estado servicio,TIMEOUT_30307ms,"Respuesta lenta: 30,307 ms (>30s)",Importación histórica,30307,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 03:39:38,ETB,Consulta niveles,TIMEOUT_30135ms,"Respuesta lenta: 30,135 ms (>30s)",Importación histórica,30135,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-15 03:39:37,ETB,Estado servicio,TIMEOUT_30370ms,"Respuesta lenta: 30,370 ms (>30s)",Importación histórica,30370,SUCCESS,200.0
+2026-04-29 12:18:28,2025-12-13 11:42:57,CLARO,Activación Servicios,TIMEOUT_42033ms,"Respuesta lenta: 42,033 ms (>30s)",Importación histórica,42033,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:55:32,ETB,Ancho de banda,TIMEOUT_34096ms,"Respuesta lenta: 34,096 ms (>30s)",Importación histórica,34096,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:55:32,ETB,Ancho de banda,TIMEOUT_34340ms,"Respuesta lenta: 34,340 ms (>30s)",Importación histórica,34340,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:55:32,ETB,Ancho de banda,TIMEOUT_31259ms,"Respuesta lenta: 31,259 ms (>30s)",Importación histórica,31259,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:53:16,ETB,Ancho de banda,TIMEOUT_31064ms,"Respuesta lenta: 31,064 ms (>30s)",Importación histórica,31064,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:53:14,ETB,Ancho de banda,TIMEOUT_33429ms,"Respuesta lenta: 33,429 ms (>30s)",Importación histórica,33429,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:53:13,ETB,Ancho de banda,TIMEOUT_30670ms,"Respuesta lenta: 30,670 ms (>30s)",Importación histórica,30670,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:52:28,ETB,Ancho de banda,TIMEOUT_31300ms,"Respuesta lenta: 31,300 ms (>30s)",Importación histórica,31300,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:52:28,ETB,Ancho de banda,TIMEOUT_31113ms,"Respuesta lenta: 31,113 ms (>30s)",Importación histórica,31113,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:52:27,ETB,Consulta niveles,TIMEOUT_31065ms,"Respuesta lenta: 31,065 ms (>30s)",Importación histórica,31065,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:51:33,ETB,Ancho de banda,TIMEOUT_32756ms,"Respuesta lenta: 32,756 ms (>30s)",Importación histórica,32756,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:51:33,ETB,Consulta niveles,TIMEOUT_32909ms,"Respuesta lenta: 32,909 ms (>30s)",Importación histórica,32909,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:51:33,ETB,Estado servicio,TIMEOUT_30909ms,"Respuesta lenta: 30,909 ms (>30s)",Importación histórica,30909,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 17:51:33,ETB,Ancho de banda,TIMEOUT_33421ms,"Respuesta lenta: 33,421 ms (>30s)",Importación histórica,33421,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 09:55:26,ETB,Consulta niveles,TIMEOUT_32542ms,"Respuesta lenta: 32,542 ms (>30s)",Importación histórica,32542,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 09:00:19,ETB,Consulta niveles,TIMEOUT_31698ms,"Respuesta lenta: 31,698 ms (>30s)",Importación histórica,31698,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-12 09:00:19,ETB,Estado servicio,TIMEOUT_32280ms,"Respuesta lenta: 32,280 ms (>30s)",Importación histórica,32280,SUCCESS,200.0
+2026-04-29 12:18:28,2025-12-11 14:09:52,CLARO,Activación ONT,TIMEOUT_44764ms,"Respuesta lenta: 44,764 ms (>30s)",Importación histórica,44764,SUCCESS,200.0
+2026-04-29 12:18:28,2025-12-10 15:38:53,CLARO,Activación ONT,TIMEOUT_30516ms,"Respuesta lenta: 30,516 ms (>30s)",Importación histórica,30516,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-10 15:10:07,ETB,Consulta niveles,TIMEOUT_42875ms,"Respuesta lenta: 42,875 ms (>30s)",Importación histórica,42875,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-10 14:34:15,CLARO,Activación ONT,TIMEOUT_30993ms,"Respuesta lenta: 30,993 ms (>30s)",Importación histórica,30993,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-10 14:23:07,CLARO,Activación ONT,TIMEOUT_30021ms,"Respuesta lenta: 30,021 ms (>30s)",Importación histórica,30021,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-10 13:59:32,ETB,Consulta niveles,TIMEOUT_31150ms,"Respuesta lenta: 31,150 ms (>30s)",Importación histórica,31150,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-10 13:39:23,ETB,Ancho de banda,TIMEOUT_30722ms,"Respuesta lenta: 30,722 ms (>30s)",Importación histórica,30722,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-10 13:39:05,ETB,Consulta niveles,TIMEOUT_32184ms,"Respuesta lenta: 32,184 ms (>30s)",Importación histórica,32184,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-10 12:33:05,ETB,Activación ONT,TIMEOUT_36489ms,"Respuesta lenta: 36,489 ms (>30s)",Importación histórica,36489,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-10 09:34:32,CLARO,Activación ONT,TIMEOUT_30394ms,"Respuesta lenta: 30,394 ms (>30s)",Importación histórica,30394,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-10 08:49:37,ETB,Activación ONT,TIMEOUT_34925ms,"Respuesta lenta: 34,925 ms (>30s)",Importación histórica,34925,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-09 16:38:23,CLARO,Activación ONT,TIMEOUT_37082ms,"Respuesta lenta: 37,082 ms (>30s)",Importación histórica,37082,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-09 15:37:57,ETB,Activación ONT,TIMEOUT_32409ms,"Respuesta lenta: 32,409 ms (>30s)",Importación histórica,32409,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-09 15:07:30,CLARO,Activación ONT,TIMEOUT_32802ms,"Respuesta lenta: 32,802 ms (>30s)",Importación histórica,32802,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-09 14:26:23,CLARO,Activación ONT,TIMEOUT_32666ms,"Respuesta lenta: 32,666 ms (>30s)",Importación histórica,32666,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-09 13:09:05,CLARO,Activación ONT,TIMEOUT_35022ms,"Respuesta lenta: 35,022 ms (>30s)",Importación histórica,35022,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-09 09:53:15,ETB,Estado servicio,TIMEOUT_30305ms,"Respuesta lenta: 30,305 ms (>30s)",Importación histórica,30305,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-09 09:53:15,ETB,Consulta niveles,TIMEOUT_30033ms,"Respuesta lenta: 30,033 ms (>30s)",Importación histórica,30033,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-09 01:16:40,ETB,Eliminación servicio,TIMEOUT_39004ms,"Respuesta lenta: 39,004 ms (>30s)",Importación histórica,39004,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-07 10:04:37,CLARO,Activación ONT,TIMEOUT_32303ms,"Respuesta lenta: 32,303 ms (>30s)",Importación histórica,32303,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-06 14:51:11,ETB,Activación ONT,TIMEOUT_35377ms,"Respuesta lenta: 35,377 ms (>30s)",Importación histórica,35377,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-06 14:32:11,CLARO,Activación ONT,TIMEOUT_34801ms,"Respuesta lenta: 34,801 ms (>30s)",Importación histórica,34801,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-06 11:49:59,ETB,Activación ONT,TIMEOUT_34762ms,"Respuesta lenta: 34,762 ms (>30s)",Importación histórica,34762,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-05 16:09:47,CLARO,Activación ONT,TIMEOUT_35643ms,"Respuesta lenta: 35,643 ms (>30s)",Importación histórica,35643,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-05 14:42:29,CLARO,Activación ONT,TIMEOUT_34355ms,"Respuesta lenta: 34,355 ms (>30s)",Importación histórica,34355,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-05 12:40:28,CLARO,Activación ONT,TIMEOUT_34346ms,"Respuesta lenta: 34,346 ms (>30s)",Importación histórica,34346,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-05 10:21:35,ETB,Activación Servicios,TIMEOUT_30657ms,"Respuesta lenta: 30,657 ms (>30s)",Importación histórica,30657,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-05 09:36:54,CLARO,Activación ONT,TIMEOUT_33983ms,"Respuesta lenta: 33,983 ms (>30s)",Importación histórica,33983,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-05 09:12:17,CLARO,Activación ONT,TIMEOUT_32065ms,"Respuesta lenta: 32,065 ms (>30s)",Importación histórica,32065,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-05 08:36:48,CLARO,Activación ONT,TIMEOUT_34775ms,"Respuesta lenta: 34,775 ms (>30s)",Importación histórica,34775,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 17:38:26,CLARO,Activación Servicios,TIMEOUT_32031ms,"Respuesta lenta: 32,031 ms (>30s)",Importación histórica,32031,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 17:33:46,CLARO,Activación ONT,TIMEOUT_43145ms,"Respuesta lenta: 43,145 ms (>30s)",Importación histórica,43145,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 16:57:59,CLARO,Activación ONT,TIMEOUT_33985ms,"Respuesta lenta: 33,985 ms (>30s)",Importación histórica,33985,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 15:04:08,ETB,Activación ONT,TIMEOUT_35542ms,"Respuesta lenta: 35,542 ms (>30s)",Importación histórica,35542,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 14:45:35,ETB,Ancho de banda,TIMEOUT_30082ms,"Respuesta lenta: 30,082 ms (>30s)",Importación histórica,30082,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 14:45:35,ETB,Ancho de banda,TIMEOUT_30587ms,"Respuesta lenta: 30,587 ms (>30s)",Importación histórica,30587,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 14:45:35,ETB,Consulta niveles,TIMEOUT_30887ms,"Respuesta lenta: 30,887 ms (>30s)",Importación histórica,30887,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 14:45:33,ETB,Ancho de banda,TIMEOUT_32572ms,"Respuesta lenta: 32,572 ms (>30s)",Importación histórica,32572,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 14:45:33,ETB,Consulta niveles,TIMEOUT_32958ms,"Respuesta lenta: 32,958 ms (>30s)",Importación histórica,32958,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 14:45:32,ETB,Estado servicio,TIMEOUT_31069ms,"Respuesta lenta: 31,069 ms (>30s)",Importación histórica,31069,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 12:53:42,CLARO,Activación ONT,TIMEOUT_31933ms,"Respuesta lenta: 31,933 ms (>30s)",Importación histórica,31933,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 12:18:57,ETB,Activación ONT,TIMEOUT_34188ms,"Respuesta lenta: 34,188 ms (>30s)",Importación histórica,34188,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 11:33:53,CLARO,Activación ONT,TIMEOUT_36770ms,"Respuesta lenta: 36,770 ms (>30s)",Importación histórica,36770,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 11:31:01,CLARO,Activación ONT,TIMEOUT_31244ms,"Respuesta lenta: 31,244 ms (>30s)",Importación histórica,31244,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 09:17:27,ETB,Consulta niveles,TIMEOUT_31121ms,"Respuesta lenta: 31,121 ms (>30s)",Importación histórica,31121,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 09:17:27,ETB,Estado servicio,TIMEOUT_30996ms,"Respuesta lenta: 30,996 ms (>30s)",Importación histórica,30996,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 09:11:16,ETB,Estado servicio,TIMEOUT_43110ms,"Respuesta lenta: 43,110 ms (>30s)",Importación histórica,43110,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-04 09:10:11,ETB,Estado servicio,TIMEOUT_30775ms,"Respuesta lenta: 30,775 ms (>30s)",Importación histórica,30775,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-03 16:10:20,ETB,Activación ONT,TIMEOUT_30477ms,"Respuesta lenta: 30,477 ms (>30s)",Importación histórica,30477,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-02 15:16:43,CLARO,Activación ONT,TIMEOUT_32577ms,"Respuesta lenta: 32,577 ms (>30s)",Importación histórica,32577,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-02 12:42:43,CLARO,Activación ONT,TIMEOUT_30250ms,"Respuesta lenta: 30,250 ms (>30s)",Importación histórica,30250,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-02 10:53:42,ETB,Activación ONT,TIMEOUT_39505ms,"Respuesta lenta: 39,505 ms (>30s)",Importación histórica,39505,SUCCESS,200.0
+2026-04-29 12:18:29,2025-12-01 16:25:10,ETB,Activación ONT,TIMEOUT_30687ms,"Respuesta lenta: 30,687 ms (>30s)",Importación histórica,30687,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-30 11:01:22,CLARO,Activación ONT,TIMEOUT_31978ms,"Respuesta lenta: 31,978 ms (>30s)",Importación histórica,31978,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-29 13:23:41,ETB,Activación ONT,TIMEOUT_30140ms,"Respuesta lenta: 30,140 ms (>30s)",Importación histórica,30140,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-29 11:59:49,ETB,Estado servicio,TIMEOUT_33513ms,"Respuesta lenta: 33,513 ms (>30s)",Importación histórica,33513,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-29 11:59:49,ETB,Consulta niveles,TIMEOUT_33056ms,"Respuesta lenta: 33,056 ms (>30s)",Importación histórica,33056,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-29 11:59:39,ETB,Ancho de banda,TIMEOUT_42142ms,"Respuesta lenta: 42,142 ms (>30s)",Importación histórica,42142,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-29 11:59:36,ETB,Ancho de banda,TIMEOUT_44818ms,"Respuesta lenta: 44,818 ms (>30s)",Importación histórica,44818,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-29 11:36:07,CLARO,Activación ONT,TIMEOUT_31134ms,"Respuesta lenta: 31,134 ms (>30s)",Importación histórica,31134,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-29 09:26:35,ETB,Activación ONT,TIMEOUT_30059ms,"Respuesta lenta: 30,059 ms (>30s)",Importación histórica,30059,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-28 12:57:54,ETB,Activación ONT,TIMEOUT_30197ms,"Respuesta lenta: 30,197 ms (>30s)",Importación histórica,30197,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-28 09:02:55,CLARO,Activación ONT,TIMEOUT_38883ms,"Respuesta lenta: 38,883 ms (>30s)",Importación histórica,38883,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-26 09:30:34,ETB,Activación Servicios,TIMEOUT_30745ms,"Respuesta lenta: 30,745 ms (>30s)",Importación histórica,30745,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-24 11:23:33,ETB,Estado servicio,TIMEOUT_31021ms,"Respuesta lenta: 31,021 ms (>30s)",Importación histórica,31021,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-24 11:23:33,ETB,Consulta niveles,TIMEOUT_31201ms,"Respuesta lenta: 31,201 ms (>30s)",Importación histórica,31201,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-20 10:11:04,ETB,Estado servicio,TIMEOUT_37649ms,"Respuesta lenta: 37,649 ms (>30s)",Importación histórica,37649,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-20 10:11:04,ETB,Consulta niveles,TIMEOUT_37457ms,"Respuesta lenta: 37,457 ms (>30s)",Importación histórica,37457,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-19 21:38:13,ETB,Estado servicio,TIMEOUT_31796ms,"Respuesta lenta: 31,796 ms (>30s)",Importación histórica,31796,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-19 21:38:12,ETB,Consulta niveles,TIMEOUT_32825ms,"Respuesta lenta: 32,825 ms (>30s)",Importación histórica,32825,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-19 20:37:00,ETB,Consulta niveles,TIMEOUT_31898ms,"Respuesta lenta: 31,898 ms (>30s)",Importación histórica,31898,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-19 20:37:00,ETB,Estado servicio,TIMEOUT_32556ms,"Respuesta lenta: 32,556 ms (>30s)",Importación histórica,32556,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-19 20:34:01,ETB,Consulta niveles,TIMEOUT_44149ms,"Respuesta lenta: 44,149 ms (>30s)",Importación histórica,44149,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-19 16:41:59,ETB,Activación ONT,TIMEOUT_35745ms,"Respuesta lenta: 35,745 ms (>30s)",Importación histórica,35745,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-19 13:43:14,ETB,Consulta niveles,TIMEOUT_31157ms,"Respuesta lenta: 31,157 ms (>30s)",Importación histórica,31157,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-19 13:43:14,ETB,Estado servicio,TIMEOUT_31020ms,"Respuesta lenta: 31,020 ms (>30s)",Importación histórica,31020,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-18 21:39:40,ETB,Suspensión,TIMEOUT_31669ms,"Respuesta lenta: 31,669 ms (>30s)",Importación histórica,31669,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-18 21:39:40,ETB,Suspensión,TIMEOUT_33202ms,"Respuesta lenta: 33,202 ms (>30s)",Importación histórica,33202,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-18 20:46:47,ETB,Estado servicio,TIMEOUT_30549ms,"Respuesta lenta: 30,549 ms (>30s)",Importación histórica,30549,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-18 20:19:05,ETB,Estado servicio,TIMEOUT_30448ms,"Respuesta lenta: 30,448 ms (>30s)",Importación histórica,30448,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-17 01:43:14,ETB,Eliminación servicio,TIMEOUT_34769ms,"Respuesta lenta: 34,769 ms (>30s)",Importación histórica,34769,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-17 01:42:36,ETB,Eliminación servicio,TIMEOUT_37447ms,"Respuesta lenta: 37,447 ms (>30s)",Importación histórica,37447,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-17 01:07:01,ETB,Eliminación servicio,TIMEOUT_33682ms,"Respuesta lenta: 33,682 ms (>30s)",Importación histórica,33682,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-17 01:05:10,ETB,Eliminación servicio,TIMEOUT_34719ms,"Respuesta lenta: 34,719 ms (>30s)",Importación histórica,34719,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-14 14:44:58,ETB,Activación ONT,TIMEOUT_33715ms,"Respuesta lenta: 33,715 ms (>30s)",Importación histórica,33715,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-14 14:39:15,ETB,Consulta niveles,TIMEOUT_32139ms,"Respuesta lenta: 32,139 ms (>30s)",Importación histórica,32139,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-14 14:39:15,ETB,Estado servicio,TIMEOUT_32431ms,"Respuesta lenta: 32,431 ms (>30s)",Importación histórica,32431,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-14 11:49:21,ETB,Reconexión,TIMEOUT_31983ms,"Respuesta lenta: 31,983 ms (>30s)",Importación histórica,31983,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-14 11:49:20,ETB,Reconexión,TIMEOUT_37580ms,"Respuesta lenta: 37,580 ms (>30s)",Importación histórica,37580,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 16:33:55,ETB,Activación ONT,TIMEOUT_40678ms,"Respuesta lenta: 40,678 ms (>30s)",Importación histórica,40678,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:35:13,ETB,Consulta niveles,TIMEOUT_42308ms,"Respuesta lenta: 42,308 ms (>30s)",Importación histórica,42308,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:35:12,ETB,Estado servicio,TIMEOUT_43438ms,"Respuesta lenta: 43,438 ms (>30s)",Importación histórica,43438,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:31:34,ETB,Ancho de banda,TIMEOUT_33277ms,"Respuesta lenta: 33,277 ms (>30s)",Importación histórica,33277,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:26:35,ETB,Ancho de banda,TIMEOUT_33316ms,"Respuesta lenta: 33,316 ms (>30s)",Importación histórica,33316,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:26:35,ETB,Ancho de banda,TIMEOUT_33829ms,"Respuesta lenta: 33,829 ms (>30s)",Importación histórica,33829,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:26:35,ETB,Ancho de banda,TIMEOUT_33647ms,"Respuesta lenta: 33,647 ms (>30s)",Importación histórica,33647,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:24:18,ETB,Estado servicio,TIMEOUT_30956ms,"Respuesta lenta: 30,956 ms (>30s)",Importación histórica,30956,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:23:25,ETB,Ancho de banda,TIMEOUT_32822ms,"Respuesta lenta: 32,822 ms (>30s)",Importación histórica,32822,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:23:24,ETB,Ancho de banda,TIMEOUT_33718ms,"Respuesta lenta: 33,718 ms (>30s)",Importación histórica,33718,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 15:20:10,ETB,Consulta niveles,TIMEOUT_31167ms,"Respuesta lenta: 31,167 ms (>30s)",Importación histórica,31167,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 14:39:19,ETB,Reconexión,TIMEOUT_30342ms,"Respuesta lenta: 30,342 ms (>30s)",Importación histórica,30342,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 14:39:16,ETB,Reconexión,TIMEOUT_38549ms,"Respuesta lenta: 38,549 ms (>30s)",Importación histórica,38549,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 01:09:16,ETB,Reconexión,TIMEOUT_31907ms,"Respuesta lenta: 31,907 ms (>30s)",Importación histórica,31907,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-13 01:09:15,ETB,Reconexión,TIMEOUT_37815ms,"Respuesta lenta: 37,815 ms (>30s)",Importación histórica,37815,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-12 17:19:32,ETB,Reconexión,TIMEOUT_30924ms,"Respuesta lenta: 30,924 ms (>30s)",Importación histórica,30924,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-12 17:19:31,ETB,Reconexión,TIMEOUT_36538ms,"Respuesta lenta: 36,538 ms (>30s)",Importación histórica,36538,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-11 15:12:15,ETB,Ancho de banda,TIMEOUT_31324ms,"Respuesta lenta: 31,324 ms (>30s)",Importación histórica,31324,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-11 15:12:15,ETB,Estado servicio,TIMEOUT_31002ms,"Respuesta lenta: 31,002 ms (>30s)",Importación histórica,31002,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-11 15:12:15,ETB,Ancho de banda,TIMEOUT_31450ms,"Respuesta lenta: 31,450 ms (>30s)",Importación histórica,31450,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-11 15:12:15,ETB,Consulta niveles,TIMEOUT_31741ms,"Respuesta lenta: 31,741 ms (>30s)",Importación histórica,31741,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-11 13:52:24,ETB,Activación Servicios,TIMEOUT_36615ms,"Respuesta lenta: 36,615 ms (>30s)",Importación histórica,36615,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-11 13:43:33,ETB,Activación ONT,TIMEOUT_42182ms,"Respuesta lenta: 42,182 ms (>30s)",Importación histórica,42182,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-10 15:26:48,ETB,Estado servicio,TIMEOUT_31508ms,"Respuesta lenta: 31,508 ms (>30s)",Importación histórica,31508,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-10 15:26:48,ETB,Consulta niveles,TIMEOUT_31079ms,"Respuesta lenta: 31,079 ms (>30s)",Importación histórica,31079,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-10 15:26:48,ETB,Ancho de banda,TIMEOUT_31178ms,"Respuesta lenta: 31,178 ms (>30s)",Importación histórica,31178,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-10 15:26:48,ETB,Ancho de banda,TIMEOUT_31624ms,"Respuesta lenta: 31,624 ms (>30s)",Importación histórica,31624,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-10 15:25:50,ETB,Estado servicio,TIMEOUT_31353ms,"Respuesta lenta: 31,353 ms (>30s)",Importación histórica,31353,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-10 15:25:50,ETB,Consulta niveles,TIMEOUT_31002ms,"Respuesta lenta: 31,002 ms (>30s)",Importación histórica,31002,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-10 10:45:45,ETB,Activación ONT,TIMEOUT_41840ms,"Respuesta lenta: 41,840 ms (>30s)",Importación histórica,41840,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-09 11:00:19,ETB,Ancho de banda,TIMEOUT_30385ms,"Respuesta lenta: 30,385 ms (>30s)",Importación histórica,30385,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-09 11:00:19,ETB,Estado servicio,TIMEOUT_30948ms,"Respuesta lenta: 30,948 ms (>30s)",Importación histórica,30948,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-09 11:00:19,ETB,Ancho de banda,TIMEOUT_31724ms,"Respuesta lenta: 31,724 ms (>30s)",Importación histórica,31724,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-07 13:51:59,ETB,Consulta niveles,TIMEOUT_43390ms,"Respuesta lenta: 43,390 ms (>30s)",Importación histórica,43390,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-07 13:41:20,ETB,Consulta niveles,TIMEOUT_30963ms,"Respuesta lenta: 30,963 ms (>30s)",Importación histórica,30963,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-07 13:34:38,ETB,Consulta niveles,TIMEOUT_41228ms,"Respuesta lenta: 41,228 ms (>30s)",Importación histórica,41228,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-07 10:59:12,ETB,Consulta niveles,TIMEOUT_41773ms,"Respuesta lenta: 41,773 ms (>30s)",Importación histórica,41773,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-07 10:18:56,ETB,Activación ONT,TIMEOUT_35003ms,"Respuesta lenta: 35,003 ms (>30s)",Importación histórica,35003,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-07 09:58:54,ETB,Activación ONT,TIMEOUT_34952ms,"Respuesta lenta: 34,952 ms (>30s)",Importación histórica,34952,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-07 09:57:49,ETB,Activación ONT,TIMEOUT_38851ms,"Respuesta lenta: 38,851 ms (>30s)",Importación histórica,38851,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-05 16:05:19,ETB,Consulta niveles,TIMEOUT_30577ms,"Respuesta lenta: 30,577 ms (>30s)",Importación histórica,30577,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-05 16:05:19,ETB,Ancho de banda,TIMEOUT_31517ms,"Respuesta lenta: 31,517 ms (>30s)",Importación histórica,31517,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-05 16:05:18,ETB,Ancho de banda,TIMEOUT_32595ms,"Respuesta lenta: 32,595 ms (>30s)",Importación histórica,32595,SUCCESS,200.0
+2026-04-29 12:18:29,2025-11-05 16:05:18,ETB,Estado servicio,TIMEOUT_30906ms,"Respuesta lenta: 30,906 ms (>30s)",Importación histórica,30906,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-31 10:39:49,ETB,Reconexión,TIMEOUT_31914ms,"Respuesta lenta: 31,914 ms (>30s)",Importación histórica,31914,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-31 10:39:49,ETB,Reconexión,TIMEOUT_35859ms,"Respuesta lenta: 35,859 ms (>30s)",Importación histórica,35859,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-31 10:39:49,ETB,Reconexión,TIMEOUT_32840ms,"Respuesta lenta: 32,840 ms (>30s)",Importación histórica,32840,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-31 10:39:48,ETB,Reconexión,TIMEOUT_36617ms,"Respuesta lenta: 36,617 ms (>30s)",Importación histórica,36617,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-29 09:10:11,ETB,Activación ONT,TIMEOUT_34350ms,"Respuesta lenta: 34,350 ms (>30s)",Importación histórica,34350,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-18 14:28:05,CLARO,Activación ONT,TIMEOUT_31928ms,"Respuesta lenta: 31,928 ms (>30s)",Importación histórica,31928,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-18 11:07:41,ETB,Estado servicio,TIMEOUT_30771ms,"Respuesta lenta: 30,771 ms (>30s)",Importación histórica,30771,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-18 10:09:12,ETB,Reconexión,TIMEOUT_31316ms,"Respuesta lenta: 31,316 ms (>30s)",Importación histórica,31316,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-18 10:09:11,ETB,Reconexión,TIMEOUT_31750ms,"Respuesta lenta: 31,750 ms (>30s)",Importación histórica,31750,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-17 00:44:36,ETB,Eliminación servicio,TIMEOUT_45032ms,"Respuesta lenta: 45,032 ms (>30s)",Importación histórica,45032,FAILED,500.0
+2026-04-29 12:18:29,2025-10-16 11:48:11,ETB,Ancho de banda,TIMEOUT_45021ms,"Respuesta lenta: 45,021 ms (>30s)",Importación histórica,45021,FAILED,500.0
+2026-04-29 12:18:29,2025-10-16 11:48:11,ETB,Ancho de banda,TIMEOUT_45029ms,"Respuesta lenta: 45,029 ms (>30s)",Importación histórica,45029,FAILED,500.0
+2026-04-29 12:18:29,2025-10-16 11:48:10,ETB,Consulta niveles,TIMEOUT_45023ms,"Respuesta lenta: 45,023 ms (>30s)",Importación histórica,45023,FAILED,500.0
+2026-04-29 12:18:29,2025-10-15 16:55:48,ETB,Estado servicio,TIMEOUT_33644ms,"Respuesta lenta: 33,644 ms (>30s)",Importación histórica,33644,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-15 12:34:24,CLARO,Activación ONT,TIMEOUT_30631ms,"Respuesta lenta: 30,631 ms (>30s)",Importación histórica,30631,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-15 09:38:23,ETB,Consulta niveles,TIMEOUT_30063ms,"Respuesta lenta: 30,063 ms (>30s)",Importación histórica,30063,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-15 09:37:50,ETB,Ancho de banda,TIMEOUT_44095ms,"Respuesta lenta: 44,095 ms (>30s)",Importación histórica,44095,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-15 09:36:57,ETB,Estado servicio,TIMEOUT_32516ms,"Respuesta lenta: 32,516 ms (>30s)",Importación histórica,32516,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-14 13:02:47,ETB,Activación ONT,TIMEOUT_33087ms,"Respuesta lenta: 33,087 ms (>30s)",Importación histórica,33087,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-10 10:04:42,CLARO,Activación ONT,TIMEOUT_30543ms,"Respuesta lenta: 30,543 ms (>30s)",Importación histórica,30543,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-09 11:00:03,CLARO,Activación ONT,TIMEOUT_33612ms,"Respuesta lenta: 33,612 ms (>30s)",Importación histórica,33612,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-08 16:05:56,ETB,Activación ONT,TIMEOUT_37040ms,"Respuesta lenta: 37,040 ms (>30s)",Importación histórica,37040,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-03 15:08:02,ETB,Estado servicio,TIMEOUT_30609ms,"Respuesta lenta: 30,609 ms (>30s)",Importación histórica,30609,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-02 01:19:09,ETB,Suspensión,TIMEOUT_31717ms,"Respuesta lenta: 31,717 ms (>30s)",Importación histórica,31717,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-02 01:19:09,ETB,Suspensión,TIMEOUT_32150ms,"Respuesta lenta: 32,150 ms (>30s)",Importación histórica,32150,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-02 00:29:10,ETB,Suspensión,TIMEOUT_30504ms,"Respuesta lenta: 30,504 ms (>30s)",Importación histórica,30504,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-02 00:29:09,ETB,Suspensión,TIMEOUT_30839ms,"Respuesta lenta: 30,839 ms (>30s)",Importación histórica,30839,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-01 23:29:44,ETB,Suspensión,TIMEOUT_30547ms,"Respuesta lenta: 30,547 ms (>30s)",Importación histórica,30547,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-01 23:29:44,ETB,Suspensión,TIMEOUT_30936ms,"Respuesta lenta: 30,936 ms (>30s)",Importación histórica,30936,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-01 22:50:35,ETB,Suspensión,TIMEOUT_30512ms,"Respuesta lenta: 30,512 ms (>30s)",Importación histórica,30512,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-01 22:50:34,ETB,Suspensión,TIMEOUT_30987ms,"Respuesta lenta: 30,987 ms (>30s)",Importación histórica,30987,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-01 22:49:56,ETB,Suspensión,TIMEOUT_30476ms,"Respuesta lenta: 30,476 ms (>30s)",Importación histórica,30476,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-01 22:49:56,ETB,Suspensión,TIMEOUT_30877ms,"Respuesta lenta: 30,877 ms (>30s)",Importación histórica,30877,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-01 22:30:03,ETB,Suspensión,TIMEOUT_30424ms,"Respuesta lenta: 30,424 ms (>30s)",Importación histórica,30424,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-01 22:30:03,ETB,Suspensión,TIMEOUT_30754ms,"Respuesta lenta: 30,754 ms (>30s)",Importación histórica,30754,SUCCESS,200.0
+2026-04-29 12:18:29,2025-10-01 14:51:50,ETB,Activación ONT,TIMEOUT_32068ms,"Respuesta lenta: 32,068 ms (>30s)",Importación histórica,32068,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-30 15:42:54,ETB,Activación ONT,TIMEOUT_31837ms,"Respuesta lenta: 31,837 ms (>30s)",Importación histórica,31837,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-30 11:25:53,ETB,Activación ONT,TIMEOUT_33491ms,"Respuesta lenta: 33,491 ms (>30s)",Importación histórica,33491,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-29 15:44:30,ETB,Ancho de banda,TIMEOUT_30235ms,"Respuesta lenta: 30,235 ms (>30s)",Importación histórica,30235,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-29 15:44:29,ETB,Ancho de banda,TIMEOUT_31458ms,"Respuesta lenta: 31,458 ms (>30s)",Importación histórica,31458,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-29 15:44:29,ETB,Ancho de banda,TIMEOUT_30991ms,"Respuesta lenta: 30,991 ms (>30s)",Importación histórica,30991,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-26 10:55:34,ETB,Ancho de banda,TIMEOUT_34739ms,"Respuesta lenta: 34,739 ms (>30s)",Importación histórica,34739,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-26 10:55:06,ETB,Ancho de banda,TIMEOUT_31234ms,"Respuesta lenta: 31,234 ms (>30s)",Importación histórica,31234,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 22:50:35,ETB,Terminación,TIMEOUT_31128ms,"Respuesta lenta: 31,128 ms (>30s)",Importación histórica,31128,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 22:49:35,ETB,Terminación,TIMEOUT_31155ms,"Respuesta lenta: 31,155 ms (>30s)",Importación histórica,31155,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 22:43:14,ETB,Terminación,TIMEOUT_31057ms,"Respuesta lenta: 31,057 ms (>30s)",Importación histórica,31057,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 22:41:50,ETB,Terminación,TIMEOUT_31216ms,"Respuesta lenta: 31,216 ms (>30s)",Importación histórica,31216,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 19:28:20,ETB,Reconexión,TIMEOUT_30670ms,"Respuesta lenta: 30,670 ms (>30s)",Importación histórica,30670,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 19:28:19,ETB,Reconexión,TIMEOUT_31048ms,"Respuesta lenta: 31,048 ms (>30s)",Importación histórica,31048,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 19:26:00,ETB,Reconexión,TIMEOUT_30784ms,"Respuesta lenta: 30,784 ms (>30s)",Importación histórica,30784,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 19:26:00,ETB,Reconexión,TIMEOUT_31597ms,"Respuesta lenta: 31,597 ms (>30s)",Importación histórica,31597,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 15:35:04,ETB,Consulta niveles,TIMEOUT_39659ms,"Respuesta lenta: 39,659 ms (>30s)",Importación histórica,39659,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 15:16:48,ETB,Eliminación servicio,TIMEOUT_30962ms,"Respuesta lenta: 30,962 ms (>30s)",Importación histórica,30962,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 15:16:47,ETB,Eliminación servicio,TIMEOUT_32559ms,"Respuesta lenta: 32,559 ms (>30s)",Importación histórica,32559,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 15:16:45,ETB,Eliminación servicio,TIMEOUT_31697ms,"Respuesta lenta: 31,697 ms (>30s)",Importación histórica,31697,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 15:16:02,ETB,Eliminación servicio,TIMEOUT_31625ms,"Respuesta lenta: 31,625 ms (>30s)",Importación histórica,31625,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-25 15:15:59,ETB,Eliminación servicio,TIMEOUT_31880ms,"Respuesta lenta: 31,880 ms (>30s)",Importación histórica,31880,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-24 16:32:39,ETB,Activación Servicios,TIMEOUT_35552ms,"Respuesta lenta: 35,552 ms (>30s)",Importación histórica,35552,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-24 16:10:49,ETB,Activación Servicios,TIMEOUT_34311ms,"Respuesta lenta: 34,311 ms (>30s)",Importación histórica,34311,SUCCESS,200.0
+2026-04-29 12:18:29,2025-09-22 11:24:26,CLARO,Activación Servicios,TIMEOUT_39963ms,"Respuesta lenta: 39,963 ms (>30s)",Importación histórica,39963,SUCCESS,200.0
