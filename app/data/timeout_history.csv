@@ -1,4 +1,5 @@
 fecha_deteccion,fecha_timeout,operador,proceso,codigo,descripcion,rango_consulta,time_taken_ms,status,status_code
+2026-04-30 16:16:02,2026-04-30 16:12:52,CLARO,Activación Servicios,TIMEOUT_36185ms,"Timeout: 36,185ms",now-7d,36185,,
 2026-04-30 10:59:52,2026-04-30 10:10:48,CLARO,Activación Servicios,TIMEOUT_35423ms,"Timeout: 35,423ms",now-1h,35423,,
 2026-04-30 09:26:22,2026-04-30 08:33:30,CLARO,Activación Servicios,TIMEOUT_31106ms,"Timeout: 31,106ms",now-24h,31106,,
 2026-04-30 08:31:52,2026-04-30 08:05:39,CLARO,Activación Servicios,TIMEOUT_35510ms,"Timeout: 35,510ms",now-7d,35510,,
