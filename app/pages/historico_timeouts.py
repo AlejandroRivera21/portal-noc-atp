@@ -4,6 +4,7 @@ Histórico de Timeouts — Portal NOC ATP
 Vista premium con importación histórica desde Elasticsearch.
 NUEVO: Sección de análisis de cobertura Kibana vs Portal.
 NUEVO: Filtro de horas en rango personalizado.
+FIX: Encoding utf-8-sig en exportaciones CSV para Excel.
 """
 import streamlit as st
 import pandas as pd
@@ -169,7 +170,6 @@ def render():
             hora_fin_custom = st.time_input("🕐 Hora fin",
                 value=time(23, 59), key="hist_hf")
 
-        # Mostrar el rango seleccionado
         if fecha_ini_custom and fecha_fin_custom:
             dt_ini = datetime.combine(fecha_ini_custom, hora_ini_custom or time(0, 0))
             dt_fin = datetime.combine(fecha_fin_custom, hora_fin_custom or time(23, 59))
@@ -343,7 +343,7 @@ def render():
     col_exp, _, _ = st.columns([1, 2, 2])
     with col_exp:
         st.download_button("⬇️ Exportar CSV",
-            data=df_f.to_csv(index=False).encode("utf-8"),
+            data=df_f.to_csv(index=False, encoding="utf-8-sig").encode("utf-8-sig"),
             file_name=f"timeouts_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
             mime="text/csv", use_container_width=True)
 
@@ -503,7 +503,7 @@ def render():
                         col_d1, _, _ = st.columns([1,2,2])
                         with col_d1:
                             st.download_button("⬇️ Exportar Grupo 1",
-                                data=df_ops.to_csv(index=False).encode("utf-8"),
+                                data=df_ops.to_csv(index=False, encoding="utf-8-sig").encode("utf-8-sig"),
                                 file_name=f"kibana_claro_etb_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
                                 mime="text/csv", use_container_width=True, key="exp_g1")
                     else:
@@ -516,7 +516,7 @@ def render():
                         col_d2, _, _ = st.columns([1,2,2])
                         with col_d2:
                             st.download_button("⬇️ Exportar Grupo 2",
-                                data=df_excluidos.to_csv(index=False).encode("utf-8"),
+                                data=df_excluidos.to_csv(index=False, encoding="utf-8-sig").encode("utf-8-sig"),
                                 file_name=f"kibana_excluidos_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
                                 mime="text/csv", use_container_width=True, key="exp_g2")
                     else:
