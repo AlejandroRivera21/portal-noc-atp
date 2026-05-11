@@ -12,6 +12,18 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# ─── CONFIG DE PAGINA (titulo de la pestaña del navegador) ────
+st.set_page_config(
+    page_title="Portal NOC ATP — Reportes Ejecutivos",
+    page_icon="📄",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# ─── SIDEBAR COMPARTIDO (azul, con botones de navegacion + tunel) ───
+from modules.styles import sidebar_comun
+sidebar_comun(mostrar_timeouts=False)
+
 from modules.data_processor import (
     procesar_dataframe, calcular_kpis, evaluar_alertas, COL_TIME
 )
@@ -523,3 +535,5 @@ def render():
             with c2: st.metric("Reportes CLARO",        claro)
             with c3: st.metric("Reportes ETB",          etb)
             with c4: st.metric("Reportes CLARO + ETB",  ambos)
+
+render()

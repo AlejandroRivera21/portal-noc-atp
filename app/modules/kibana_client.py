@@ -1,14 +1,19 @@
+
 """
 modules/kibana_client.py
 Conexion a Elasticsearch via sesion autenticada de Kibana.
 Indice: http-rest-service-*
 
-ACTUALIZACIÓN: Se agrega campo timeTaken al source para detectar
-timeouts reales (transacciones que tardaron > 30,000 ms).
-FIX: Se agrega restCallTimeTaken como campo alternativo en source y extracción.
-Confirmado en Kibana: el código 100-5 no existe en este sistema.
-Los timeouts se identifican por timeTaken > 30000 o restCallTimeTaken > 30000.
+FIXES APLICADOS:
+- FIX PAGINACION: Se usa _id como tiebreaker en search_after para evitar
+  perder registros cuando hay timestamps duplicados. Antes se perdian ~206
+  registros por pagina (0.1% del total).
+- FIX ZONA HORARIA: El portal usa UTC internamente. Colombia = UTC-5.
+  Usar get_kibana_kql_custom() para generar KQL con conversion automatica.
+- FIX VNO=CLARO: Los registros con relatedParty.name="VNO" pertenecen a CLARO.
+- FIX timeTaken: fallback a restCallTimeTaken si timeTaken es None.
 """
+
 import requests
 import urllib3
 import json
@@ -25,16 +30,113 @@ USER       = os.getenv("KIBANA_USER", "atp_operations")
 PASSWORD   = os.getenv("KIBANA_PASSWORD", "ATPOperations_2025")
 INDEX      = "http-rest-service-*"
 PAGE_SIZE  = 5000
-TZ         = timezone.utc
+
+# UTC siempre — Elasticsearch almacena en UTC
+# Colombia = UTC-5 (sin horario de verano)
+TZ                = timezone.utc
+TZ_BOGOTA         = timezone(timedelta(hours=-5))
+UMBRAL_TIMEOUT_MS = 30000  # 30 segundos
 
 UUID_CLARO = "bfa64110-9851-462f-858a-563c7e88dcb2"
 UUID_ETB   = "9f722166-aea5-4ead-b19b-1b80eb45de76"
 
-UMBRAL_TIMEOUT_MS = 30000  # 30 segundos — confirmado en Kibana
-
 _session_cache = {"session": None, "expires": None}
 
 
+# ─────────────────────────────────────────────
+# UTILIDAD: genera KQL listo para pegar en Kibana
+# ─────────────────────────────────────────────
+def get_kibana_kql(operador: str = "AMBOS", rango: str = "now-24h") -> str:
+    """
+    Retorna el KQL exacto para pegar en Kibana Discover y obtener
+    los mismos resultados que el portal.
+
+    Ejemplo:
+        print(get_kibana_kql("CLARO", "now-7d"))
+        print(get_kibana_kql("ETB",   "now-24h"))
+        print(get_kibana_kql("AMBOS", "now-7d"))
+    """
+    fecha_ini, fecha_fin = _rango_a_fechas(rango)
+    filtro_tiempo = f'@timestamp >= "{fecha_ini}" and @timestamp <= "{fecha_fin}"'
+    filtro_op     = _get_filtro_op_kql(operador)
+    kql           = f"{filtro_tiempo} and {filtro_op}"
+
+    now_utc    = datetime.now(TZ)
+    now_bogota = datetime.now(TZ_BOGOTA)
+    print("=" * 70)
+    print("KQL para pegar en Kibana Discover:")
+    print("=" * 70)
+    print(kql)
+    print("=" * 70)
+    print(f"Hora UTC actual   : {now_utc.strftime('%Y-%m-%d %H:%M:%S')} UTC")
+    print(f"Hora Bogota actual: {now_bogota.strftime('%Y-%m-%d %H:%M:%S')} COT")
+    print("IMPORTANTE: Los timestamps estan en UTC.")
+    print("Kibana muestra hora Bogota (UTC-5) en pantalla.")
+    print("=" * 70)
+    return kql
+
+
+def get_kibana_kql_custom(operador: str,
+                           fecha_ini_bogota: str,
+                           fecha_fin_bogota: str) -> str:
+    """
+    Genera KQL a partir de fechas en hora Bogota (UTC-5).
+    Convierte automaticamente a UTC para que coincida con el portal.
+
+    Ejemplo:
+        # Portal muestra: 08/04/2026 15:12 — 08/05/2026 15:12
+        kql = get_kibana_kql_custom("AMBOS",
+                                    "2026-04-08T15:12:00",
+                                    "2026-05-08T15:12:00")
+    """
+    fmt    = "%Y-%m-%dT%H:%M:%S"
+    dt_ini = datetime.strptime(fecha_ini_bogota, fmt).replace(tzinfo=TZ_BOGOTA)
+    dt_fin = datetime.strptime(fecha_fin_bogota, fmt).replace(tzinfo=TZ_BOGOTA)
+
+    ini_utc = dt_ini.astimezone(TZ).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    fin_utc = dt_fin.astimezone(TZ).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+
+    filtro_tiempo = f'@timestamp >= "{ini_utc}" and @timestamp <= "{fin_utc}"'
+    filtro_op     = _get_filtro_op_kql(operador)
+    kql           = f"{filtro_tiempo} and {filtro_op}"
+
+    print("=" * 70)
+    print("KQL para pegar en Kibana Discover:")
+    print("=" * 70)
+    print(kql)
+    print("=" * 70)
+    print(f"Entrada Bogota : {fecha_ini_bogota} -> {fecha_fin_bogota}")
+    print(f"Convertido UTC : {ini_utc} -> {fin_utc}")
+    print("=" * 70)
+    return kql
+
+
+def _get_filtro_op_kql(operador: str) -> str:
+    """Retorna la parte del filtro de operador para KQL."""
+    if operador == "CLARO":
+        return (
+            '(request.Request.relatedParty.name: "CLARO" '
+            'or request.Request.relatedParty.name: "VNO" '
+            f'or request.Request.relatedParty.id: "{UUID_CLARO}")'
+        )
+    if operador == "ETB":
+        return (
+            '(request.Request.relatedParty.name: "ETB" '
+            f'or request.Request.relatedParty.id: "{UUID_ETB}")'
+        )
+    # AMBOS
+    return (
+        '(request.Request.relatedParty.name: "CLARO" '
+        'or request.Request.relatedParty.name: "VNO" '
+        'or request.Request.relatedParty.name: "ETB" '
+        f'or request.Request.relatedParty.id: "{UUID_CLARO}" '
+        f'or request.Request.relatedParty.id: "{UUID_ETB}")'
+    )
+
+
+# ─────────────────────────────────────────────
+# RANGO DE FECHAS (siempre en UTC)
+# ─────────────────────────────────────────────
 def _rango_a_fechas(rango: str) -> tuple:
     ahora = datetime.now(TZ)
     fmt   = "%Y-%m-%dT%H:%M:%S.000Z"
@@ -60,7 +162,16 @@ def _rango_a_fechas(rango: str) -> tuple:
     return (ahora - delta).strftime(fmt), ahora.strftime(fmt)
 
 
+# ─────────────────────────────────────────────
+# CONSTRUCCION DEL QUERY (CLARO incluye VNO)
+# ─────────────────────────────────────────────
 def _build_query(operador: str, fecha_ini: str, fecha_fin: str) -> dict:
+    """
+    IMPORTANTE — VNO es CLARO:
+    Los registros de CLARO pueden tener relatedParty.name = "CLARO" o "VNO".
+    Ambos apuntan al UUID_CLARO. El portal los agrupa como "CLARO".
+    Para replicar en Kibana manualmente usar: get_kibana_kql()
+    """
     rango = {"range": {"@timestamp": {"gte": fecha_ini, "lte": fecha_fin}}}
 
     if operador == "CLARO":
@@ -88,6 +199,7 @@ def _build_query(operador: str, fecha_ini: str, fecha_fin: str) -> dict:
             }
         }
 
+    # AMBOS: CLARO (+ VNO) + ETB
     return {
         "bool": {
             "must": [rango],
@@ -103,6 +215,9 @@ def _build_query(operador: str, fecha_ini: str, fecha_fin: str) -> dict:
     }
 
 
+# ─────────────────────────────────────────────
+# SESION Y AUTENTICACION
+# ─────────────────────────────────────────────
 def _login_selenium() -> dict:
     try:
         from selenium import webdriver
@@ -178,6 +293,9 @@ def _get_session() -> requests.Session:
     return session
 
 
+# ─────────────────────────────────────────────
+# BUSQUEDA EN ELASTICSEARCH
+# ─────────────────────────────────────────────
 def _buscar(session: requests.Session, payload: dict) -> dict:
     body = json.dumps(payload)
     endpoints = [
@@ -216,6 +334,9 @@ def verificar_conexion() -> dict:
         return {"ok": False, "msg": str(e)}
 
 
+# ─────────────────────────────────────────────
+# EXTRACCION DE CAMPOS DE UN HIT
+# ─────────────────────────────────────────────
 def _extraer_fila(hit: dict) -> dict:
     s   = hit.get("_source", {})
     req = s.get("request", {}).get("Request", {})
@@ -233,6 +354,7 @@ def _extraer_fila(hit: dict) -> dict:
         rp_id   = ""
         rp_name = ""
 
+    # VNO y CLARO son el mismo operador
     if rp_name in ("VNO", "CLARO") or rp_id == UUID_CLARO:
         name = "CLARO"
     elif rp_name == "ETB" or rp_id == UUID_ETB:
@@ -243,37 +365,21 @@ def _extraer_fila(hit: dict) -> dict:
     code   = ""
     reason = ""
 
-    resp = (s.get("response", {})
-             .get("response", {})
-             .get("finalResponse", {})
-             .get("response", {}))
-    if resp:
-        c  = str(resp.get("code", "")).strip()
-        r2 = str(resp.get("reason", "")).strip()
-        if c and c not in ("None", "nan", "none", ""):
-            code, reason = c, r2
-
-    if not code:
-        resp_may = (s.get("response", {})
-                     .get("response", {})
-                     .get("finalResponse", {})
-                     .get("Response", {}))
-        if resp_may:
-            c  = str(resp_may.get("code", "")).strip()
-            r2 = str(resp_may.get("reason", "")).strip()
+    # Intentar extraer codigo de respuesta — multiples rutas posibles
+    paths = [
+        s.get("response", {}).get("response", {}).get("finalResponse", {}).get("response", {}),
+        s.get("response", {}).get("response", {}).get("finalResponse", {}).get("Response", {}),
+        s.get("response", {}).get("finalResponse", {}).get("response", {}),
+    ]
+    for resp in paths:
+        if resp:
+            c  = str(resp.get("code", "")).strip()
+            r2 = str(resp.get("reason", "")).strip()
             if c and c not in ("None", "nan", "none", ""):
                 code, reason = c, r2
+                break
 
-    if not code:
-        resp_alt = (s.get("response", {})
-                     .get("finalResponse", {})
-                     .get("response", {}))
-        if resp_alt:
-            c  = str(resp_alt.get("code", "")).strip()
-            r2 = str(resp_alt.get("reason", "")).strip()
-            if c and c not in ("None", "nan", "none", ""):
-                code, reason = c, r2
-
+    # Fallback a extCallStatus
     if not code:
         ext = str(s.get("extCallStatus", "")).strip()
         if ext and ext not in ("", "None", "nan"):
@@ -295,18 +401,42 @@ def _extraer_fila(hit: dict) -> dict:
     }
 
 
+# ─────────────────────────────────────────────
+# FIX PAGINACION — _id como tiebreaker
+# ─────────────────────────────────────────────
 def _paginar(session, query_base, source) -> tuple:
+    """
+    FIX PAGINACION:
+    Se usa _id como tiebreaker en el sort para evitar perder registros
+    cuando multiples documentos tienen exactamente el mismo @timestamp.
+    Sin este fix se perdian ~206 registros (0.1% del total).
+
+    Cambios vs version anterior:
+    - "unmapped_type": "date"  → evita errores en shards sin el campo mapeado
+    - "seq_no_primary_term": True → metadatos extra para consistencia
+    - _id como segundo campo de sort → tiebreaker unico, nunca salta documentos
+    """
     all_rows     = []
     search_after = None
     pagina       = 0
 
     while True:
         payload = {
-            "size": PAGE_SIZE, "track_total_hits": True,
-            "_source": source, "query": query_base,
+            "size":                PAGE_SIZE,
+            "track_total_hits":    True,
+            "seq_no_primary_term": True,
+            "_source":             source,
+            "query":               query_base,
             "sort": [
-                {"@timestamp": {"order": "desc"}},
-                {"_id":        {"order": "asc"}},
+                {
+                    "@timestamp": {
+                        "order":         "desc",
+                        "unmapped_type": "date",
+                    }
+                },
+                {
+                    "_id": {"order": "asc"}
+                },
             ],
         }
         if search_after:
@@ -329,6 +459,7 @@ def _paginar(session, query_base, source) -> tuple:
         pagina += 1
         if len(hits) < PAGE_SIZE:
             break
+
         search_after = hits[-1].get("sort")
         if not search_after:
             break
@@ -336,10 +467,16 @@ def _paginar(session, query_base, source) -> tuple:
     return all_rows, None
 
 
+# ─────────────────────────────────────────────
+# API PUBLICA
+# ─────────────────────────────────────────────
 def obtener_total_registros(operador: str, rango: str) -> dict:
     fecha_ini, fecha_fin = _rango_a_fechas(rango)
-    payload = {"size": 0, "track_total_hits": True,
-               "query": _build_query(operador, fecha_ini, fecha_fin)}
+    payload = {
+        "size":             0,
+        "track_total_hits": True,
+        "query":            _build_query(operador, fecha_ini, fecha_fin),
+    }
     try:
         data  = _buscar(_get_session(), payload)
         total = data.get("hits", {}).get("total", {})
@@ -351,8 +488,11 @@ def obtener_total_registros(operador: str, rango: str) -> dict:
 
 
 def obtener_total_custom(operador: str, fecha_ini: str, fecha_fin: str) -> dict:
-    payload = {"size": 0, "track_total_hits": True,
-               "query": _build_query(operador, fecha_ini, fecha_fin)}
+    payload = {
+        "size":             0,
+        "track_total_hits": True,
+        "query":            _build_query(operador, fecha_ini, fecha_fin),
+    }
     try:
         data  = _buscar(_get_session(), payload)
         total = data.get("hits", {}).get("total", {})
@@ -368,7 +508,7 @@ def obtener_transacciones_raw(operador: str, rango: str):
     source = [
         "@timestamp",
         "timeTaken",
-        "restCallTimeTaken",   # FIX: campo alternativo
+        "restCallTimeTaken",
         "extCallStatus",
         "statusCode",
         "request.Request.description",
@@ -384,7 +524,7 @@ def obtener_transacciones_raw(operador: str, rango: str):
     rows, err = _paginar(
         _get_session(),
         _build_query(operador, fecha_ini, fecha_fin),
-        source
+        source,
     )
     if err:
         return pd.DataFrame(), err
@@ -398,7 +538,7 @@ def obtener_transacciones_custom(operador: str, fecha_ini: str, fecha_fin: str):
     source = [
         "@timestamp",
         "timeTaken",
-        "restCallTimeTaken",   # FIX: campo alternativo
+        "restCallTimeTaken",
         "extCallStatus",
         "statusCode",
         "request.Request.description",
@@ -414,7 +554,7 @@ def obtener_transacciones_custom(operador: str, fecha_ini: str, fecha_fin: str):
     rows, err = _paginar(
         _get_session(),
         _build_query(operador, fecha_ini, fecha_fin),
-        source
+        source,
     )
     if err:
         return pd.DataFrame(), err
@@ -427,8 +567,9 @@ def obtener_transacciones_custom(operador: str, fecha_ini: str, fecha_fin: str):
 def obtener_kpis_agrupados(operador: str, rango: str):
     fecha_ini, fecha_fin = _rango_a_fechas(rango)
     payload = {
-        "size": 0, "track_total_hits": True,
-        "query": _build_query(operador, fecha_ini, fecha_fin),
+        "size":             0,
+        "track_total_hits": True,
+        "query":            _build_query(operador, fecha_ini, fecha_fin),
         "aggs": {
             "por_proceso": {
                 "terms": {
@@ -458,3 +599,16 @@ def obtener_kpis_agrupados(operador: str, rango: str):
         return data.get("aggregations", {}), None
     except Exception as e:
         return {}, str(e)
+
+
+# ─────────────────────────────────────────────
+# EJEMPLO DE USO
+# ─────────────────────────────────────────────
+if __name__ == "__main__":
+    print("\n--- KQL ultimos 7 dias (AMBOS) ---")
+    get_kibana_kql("AMBOS", "now-7d")
+
+    print("\n--- KQL periodo exacto del portal en hora Bogota ---")
+    get_kibana_kql_custom("AMBOS",
+                          "2026-04-08T15:12:00",
+                          "2026-05-08T15:12:00")

@@ -19,6 +19,18 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# ─── CONFIG DE PAGINA (titulo de la pestaña del navegador) ────
+st.set_page_config(
+    page_title="Portal NOC ATP — Alertas & Monitoreo",
+    page_icon="🚨",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# ─── SIDEBAR COMPARTIDO (azul, con botones de navegacion + tunel) ───
+from modules.styles import sidebar_comun
+sidebar_comun(mostrar_timeouts=False)
+
 
 def _icono_nivel(nivel):
     return {"CRÍTICO": "🔴", "SERIO": "🟠", "MEDIO": "🟡", "BAJO": "🟢"}.get(nivel, "⚪")
@@ -213,7 +225,6 @@ def _render_fallas_tiempo(df: pd.DataFrame, kpis: dict):
         st.info("Sin datos para graficar.")
         return
 
-    # ✅ FIX 1: acceso directo a columna en lugar de df.get()
     if "Es_Exito_Tecnico" not in df.columns:
         st.warning("⚠️ No se encontró la columna Es_Exito_Tecnico en los datos.")
         return
@@ -229,7 +240,6 @@ def _render_fallas_tiempo(df: pd.DataFrame, kpis: dict):
 
     df_total = df_f.groupby("Intervalo").size().reset_index(name="Fallas")
 
-    # ✅ FIX 1: acceso directo a columna en lugar de df.get()
     df_ok = df[df["Es_Exito_Tecnico"]].copy()
     df_ok["Intervalo"] = df_ok[COL_TIME].dt.floor(intervalo)
     df_ok_t   = df_ok.groupby("Intervalo").size().reset_index(name="Exitosas")
@@ -325,7 +335,6 @@ def _render_franja_horaria(df: pd.DataFrame):
         st.info("Sin datos.")
         return
 
-    # ✅ FIX 1: acceso directo a columna en lugar de df.get()
     if "Es_Exito_Tecnico" not in df.columns:
         st.warning("⚠️ No se encontró la columna Es_Exito_Tecnico en los datos.")
         return
@@ -337,7 +346,6 @@ def _render_franja_horaria(df: pd.DataFrame):
 
     df_f["Hora"] = df_f[COL_TIME].dt.hour
 
-    # ── Mapa de Calor ─────────────────────────────────────────
     st.markdown("#### 🌡️ Mapa de Calor — Fallas por hora y proceso")
     top5    = df_f[COL_TRANS].value_counts().head(5).index.tolist()
     df_heat = (df_f[df_f[COL_TRANS].isin(top5)]
@@ -372,7 +380,6 @@ def _render_franja_horaria(df: pd.DataFrame):
     )
     st.plotly_chart(fig_heat, use_container_width=True, key="heatmap_hora")
 
-    # ── Barras por hora ───────────────────────────────────────
     st.markdown("<div style='margin-top:24px;'>", unsafe_allow_html=True)
     st.markdown("#### 📊 Fallas por hora del día")
     hora_counts = df_f.groupby("Hora").size().reset_index(name="Fallas")
@@ -420,7 +427,6 @@ def _render_franja_horaria(df: pd.DataFrame):
     st.plotly_chart(fig_bar, use_container_width=True, key="bar_hora")
     st.markdown("</div>", unsafe_allow_html=True)
 
-    # ── Cards por franja ─────────────────────────────────────
     st.markdown("<div style='margin-top:16px;'>", unsafe_allow_html=True)
     franjas = {
         "🌙 Madrugada\n00:00 – 05:59": (0, 5),
@@ -468,7 +474,6 @@ def render():
 
     st.markdown("## 🚨 Alertas & Monitoreo ANS")
 
-    # ─── MONITOR 24/7 ─────────────────────────────────────────
     st.markdown("### 🕐 Monitor Automático de Timeouts — 24/7")
     with st.container():
         st.markdown(
@@ -595,7 +600,6 @@ def render():
 
     st.markdown("---")
 
-    # ─── UMBRALES ─────────────────────────────────────────────
     with st.expander("⚙️ Configurar umbrales de alerta", expanded=False):
         c1, c2, c3 = st.columns(3)
         with c1:
@@ -610,7 +614,6 @@ def render():
 
     st.markdown("---")
 
-    # ─── FUENTE DE DATOS CON FECHA/HORA ───────────────────────
     st.markdown("<div style='background:#f8f9fa;border-radius:10px;padding:14px 18px;margin-bottom:16px;'>",
                 unsafe_allow_html=True)
 
@@ -626,7 +629,6 @@ def render():
     with c_fuente:
         fuente = st.radio("Fuente", ["🔌 En vivo", "📂 CSV"], key="al_fuente", horizontal=True)
 
-    # ✅ FIX 3: limpiar session state al cambiar operador o rango
     if "al_op_prev" not in st.session_state:
         st.session_state.al_op_prev = operador
     if "al_rango_prev" not in st.session_state:
@@ -638,7 +640,6 @@ def render():
         st.session_state.al_op_prev = operador
         st.session_state.al_rango_prev = rango_label
 
-    # Rango personalizado con fecha y hora
     fecha_ini_iso = None
     fecha_fin_iso = None
 
@@ -664,7 +665,6 @@ def render():
         dt_ini = datetime.combine(fecha_ini, hora_ini)
         dt_fin = datetime.combine(fecha_fin, hora_fin)
 
-        # ✅ FIX 2: convertir COT → UTC antes de enviar a Kibana (COT = UTC-5)
         COT_A_UTC = timedelta(hours=5)
         fecha_ini_iso = (dt_ini + COT_A_UTC).strftime("%Y-%m-%dT%H:%M:%S.000Z")
         fecha_fin_iso = (dt_fin + COT_A_UTC).strftime("%Y-%m-%dT%H:%M:%S.000Z")
@@ -730,12 +730,10 @@ def render():
     alertas = evaluar_alertas(kpis, umbral_sla, umbral_to_kpi, umbral_err)
     disp    = calcular_disponibilidad_mensual(df)
 
-    # ─── SLA PROFESIONAL ──────────────────────────────────────
     _render_sla_profesional(kpis, disp)
 
     st.markdown("---")
 
-    # ─── ALERTAS DETECTADAS ───────────────────────────────────
     st.markdown("### 🚨 Alertas Detectadas")
     criticos = sum(1 for a in alertas if a["nivel"] == "CRÍTICO")
 
@@ -812,10 +810,10 @@ def render():
 
     st.markdown("---")
 
-    # ─── GRÁFICA FALLAS EN EL TIEMPO ──────────────────────────
     _render_fallas_tiempo(df, kpis)
 
     st.markdown("---")
 
-    # ─── MAPA DE CALOR Y FRANJA HORARIA ───────────────────────
     _render_franja_horaria(df)
+
+render()

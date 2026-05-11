@@ -4,17 +4,134 @@ Histórico de Timeouts — Portal NOC ATP
 Vista premium con importación histórica desde Elasticsearch.
 NUEVO: Sección de análisis de cobertura Kibana vs Portal.
 NUEVO: Filtro de horas en rango personalizado.
+NUEVO: Botón de copiar ruta del CSV + abrir carpeta en Explorador.
+NUEVO: Botón "📊 Excel" que genera el Excel formateado y lo abre directo.
 FIX: Encoding utf-8-sig en exportaciones CSV para Excel.
 """
+import os
+import subprocess
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 from datetime import datetime, date, timedelta, time
 
+# ─── CONFIG DE PAGINA (titulo de la pestaña del navegador) ────
+st.set_page_config(
+    page_title="Portal NOC ATP — Histórico Timeouts",
+    page_icon="⏱",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# ─── SIDEBAR COMPARTIDO (azul, con botones de navegacion + tunel) ───
+from modules.styles import sidebar_comun
+sidebar_comun(mostrar_timeouts=False)
+
 from modules.timeout_history import (
     leer_historico, limpiar_historico, HISTORY_FILE
 )
 
+
+# ═══════════════════════════════════════════════════════════════════════════
+# FUNCIONES AUXILIARES PARA CARPETA / EXCEL
+# ═══════════════════════════════════════════════════════════════════════════
+
+def _abrir_carpeta_csv():
+    """Abre el Explorador de Windows en la carpeta del CSV."""
+    carpeta = os.path.dirname(HISTORY_FILE)
+    try:
+        if os.name == "nt":
+            subprocess.Popen(f'explorer "{carpeta}"')
+        else:
+            subprocess.Popen(["xdg-open", carpeta])
+        return True, None
+    except Exception as e:
+        return False, str(e)
+
+
+def _abrir_excel_historico():
+    """
+    Genera y abre el Excel formateado del histórico.
+    1. Si existe scripts/exportar_excel.py → lo ejecuta para refrescar datos.
+    2. Abre Historico_Timeouts.xlsx en Excel.
+    """
+    carpeta_data = os.path.dirname(HISTORY_FILE)
+    xlsx_path    = os.path.join(carpeta_data, "Historico_Timeouts.xlsx")
+    script_path  = os.path.join(
+        os.path.dirname(carpeta_data), "scripts", "exportar_excel.py"
+    )
+
+    try:
+        # 1) Si existe el script, regenerar el Excel para tener datos frescos
+        if os.path.exists(script_path):
+            result = subprocess.run(
+                ["python", script_path],
+                capture_output=True, text=True, timeout=60,
+            )
+            if result.returncode != 0:
+                return False, f"Error generando Excel: {result.stderr[:200]}"
+
+        # 2) Si el Excel existe, abrirlo
+        if not os.path.exists(xlsx_path):
+            return False, (
+                f"No se encontró {xlsx_path}.\n"
+                f"Ejecuta scripts/exportar_excel.py primero."
+            )
+
+        if os.name == "nt":
+            os.startfile(xlsx_path)   # Windows abre con Excel asociado
+        else:
+            subprocess.Popen(["xdg-open", xlsx_path])
+        return True, None
+
+    except subprocess.TimeoutExpired:
+        return False, "El script tardó más de 60 segundos. Reintenta."
+    except Exception as e:
+        return False, str(e)
+
+
+def _bloque_ruta_csv(total_eventos: int, key_prefix: str = ""):
+    """
+    Muestra la ruta del CSV con:
+    - Botón nativo de copiar (vía st.code)
+    - Botón "📂 Carpeta"  → Explorador
+    - Botón "📊 Excel"    → genera + abre el .xlsx
+    """
+    st.markdown(
+        f"<div style='font-size:13px;color:#555;margin-bottom:4px;'>"
+        f"📁 <b>CSV actual</b> — {total_eventos:,} eventos guardados "
+        f"<span style='color:#888;font-size:11px;'>(click 📋 para copiar la ruta)</span>"
+        f"</div>",
+        unsafe_allow_html=True,
+    )
+    c1, c2, c3 = st.columns([4, 1, 1])
+    with c1:
+        st.code(HISTORY_FILE, language=None)
+    with c2:
+        if st.button("📂 Carpeta", key=f"{key_prefix}_abrir_carpeta",
+                     use_container_width=True,
+                     help="Abre el Explorador de Windows en la carpeta del CSV"):
+            ok, err = _abrir_carpeta_csv()
+            if ok:
+                st.success("Carpeta abierta ✅")
+            else:
+                st.error(f"Error: {err}")
+    with c3:
+        if st.button("📊 Excel", key=f"{key_prefix}_abrir_excel",
+                     use_container_width=True,
+                     type="primary",
+                     help="Genera Excel formateado con KPIs, filtros y colores, y lo abre"):
+            with st.spinner("Generando Excel..."):
+                ok, err = _abrir_excel_historico()
+            if ok:
+                st.success("Excel abierto ✅")
+            else:
+                st.error(f"Error: {err}")
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# KPI COLUMNA
+# ═══════════════════════════════════════════════════════════════════════════
 
 def _kpi_col(col, label, dot, df_op, total_g):
     total = len(df_op)
@@ -44,6 +161,10 @@ def _kpi_col(col, label, dot, df_op, total_g):
             unsafe_allow_html=True
         )
 
+
+# ═══════════════════════════════════════════════════════════════════════════
+# RENDER PRINCIPAL
+# ═══════════════════════════════════════════════════════════════════════════
 
 def render():
     st.markdown("## ⏱ Histórico de Timeouts — Análisis Avanzado")
@@ -80,12 +201,13 @@ def render():
                     st.error(f"Error al consultar: {e}")
 
         st.markdown("---")
-        col_imp, col_info = st.columns([1, 2])
-        with col_imp:
-            btn_importar = st.button("⬇️ Importar ahora", type="primary",
-                use_container_width=True, key="btn_importar")
-        with col_info:
-            st.caption(f"📁 CSV actual: `{HISTORY_FILE}` — {len(leer_historico()):,} eventos guardados")
+
+        # Botón importar
+        btn_importar = st.button("⬇️ Importar ahora", type="primary",
+            use_container_width=True, key="btn_importar")
+
+        # ── Ruta + botones (Carpeta + Excel) ─────
+        _bloque_ruta_csv(len(leer_historico()), key_prefix="importar")
 
         if btn_importar:
             if not ops_imp:
@@ -535,4 +657,8 @@ def render():
                 except Exception as e:
                     st.error(f"Error al consultar Kibana: {e}")
 
-    st.caption(f"📁 `{HISTORY_FILE}` — {len(df):,} eventos totales guardados")
+    # ── PIE DE PÁGINA: Ruta del CSV con botones ────────
+    st.markdown("---")
+    _bloque_ruta_csv(len(df), key_prefix="pie")
+
+render()

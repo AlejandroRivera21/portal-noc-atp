@@ -16,6 +16,18 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# ─── CONFIG DE PAGINA (titulo de la pestaña del navegador) ────
+st.set_page_config(
+    page_title="Portal NOC ATP — Dashboard KPIs",
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# ─── SIDEBAR COMPARTIDO (azul, con botones de navegacion + tunel) ───
+from modules.styles import sidebar_comun
+sidebar_comun(mostrar_timeouts=False)
+
 from modules.data_processor import (
     procesar_dataframe, calcular_kpis, evaluar_alertas,
     COL_TRANS, COL_CODE, COL_TIME, COLORES_PROCESO, PROCESOS_IMPORTANTES
@@ -316,13 +328,17 @@ def render():
                     datos[op]  = df_op
                     if err: errors[op] = err
 
+            # ── FIX: usar if/else en lugar de ternario bare ──────
             for op in ops_a_cargar:
                 df_op = datos.get(op, pd.DataFrame())
                 info  = totales_info.get(op, {})
                 if not df_op.empty and info.get("ok") and info.get("total", 0) > 0:
                     pct = len(df_op) / info["total"] * 100
                     txt = f"✅ **{op}**: {len(df_op):,} de {info['total']:,} registros ({pct:.1f}%)"
-                    st.success(txt) if pct >= 99 else st.warning(txt)
+                    if pct >= 99:
+                        st.success(txt)
+                    else:
+                        st.warning(txt)
                 elif op in errors:
                     st.warning(f"⚠️ **{op}**: {errors[op]}")
 
@@ -1141,3 +1157,5 @@ def _render_top_errores(kpis: dict, key_suffix: str = ""):
         f"'% del Total' = impacto sobre {total_tx:,} transacciones totales. "
         f"La línea roja marca la meta máxima permitida de 0.1%."
     )
+
+render()
