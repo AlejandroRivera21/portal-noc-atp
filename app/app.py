@@ -1,4 +1,4 @@
-"""
+﻿"""
 app.py — Landing page del Portal NOC ATP
 """
 import streamlit as st
@@ -14,6 +14,13 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+from login import mostrar_login, cerrar_sesion
+
+if not mostrar_login():
+    st.stop()
+
+cerrar_sesion()
 
 st.markdown("""
 <style>
@@ -42,7 +49,7 @@ header[data-testid="stHeader"] { background: transparent; }
     box-shadow: 0 4px 20px rgba(0,0,0,0.07);
     display: flex;
     flex-direction: column;
-    min-height: 240px;
+    height: 260px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
 }
@@ -103,7 +110,7 @@ st.markdown(
 
 # ─── SIDEBAR (sin menu de navegacion, solo logo + tunel) ───────
 with st.sidebar:
-    logo_path = os.path.join(os.path.dirname(__file__), "assets", "ATP_logo.png")
+    logo_path = os.path.join(os.path.dirname(__file__), "assets", "ATPLOGIN.png")
     st.markdown(
         "<div style='background:#1a1a2e;border-radius:10px;padding:10px 8px;"
         "margin-bottom:4px;text-align:center;'>",
@@ -148,6 +155,21 @@ with st.sidebar:
             f"{msg}</div>", unsafe_allow_html=True
         )
 
+
+    # --- Boton admin ---
+    from login import solo_admin
+    if solo_admin():
+        st.markdown(
+            "<hr style='border-color:rgba(255,255,255,0.1);margin:10px 0;'>",
+            unsafe_allow_html=True
+        )
+        st.markdown(
+            "<div style='font-size:9px;color:rgba(255,255,255,0.3);letter-spacing:1px;"
+            "text-transform:uppercase;margin-bottom:6px;'>Administracion</div>",
+            unsafe_allow_html=True
+        )
+        if st.button("👥 Gestión de Usuarios", use_container_width=True, key="btn_admin"):
+            st.switch_page("pages/gestion_usuarios.py")
     st.markdown(
         "<br><div style='font-size:9px;color:rgba(255,255,255,0.2);text-align:center;'>"
         "Portal NOC v1.0 · Gerencia Fibra</div>",
@@ -611,7 +633,6 @@ for col, icon, title, desc, arrow, key, page, btn_label, color, bg in cards:
             <span class="nav-card-icon" style="background:{bg};">{icon}</span>
             <div class="nav-card-title">{title}</div>
             <div class="nav-card-desc">{desc}</div>
-            <div class="nav-card-arrow" style="color:{color};">{arrow}</div>
         </div>
         """, unsafe_allow_html=True)
         if st.button(btn_label, use_container_width=True, key=key):

@@ -1,4 +1,4 @@
-"""
+﻿"""
 pages/historico_timeouts.py
 Histórico de Timeouts — Portal NOC ATP
 Vista premium con importación histórica desde Elasticsearch.
@@ -253,13 +253,21 @@ def render():
     fc1, fc2, fc3, fc4 = st.columns(4)
     with fc1:
         rango_opciones = {
+            "Últimos 15 minutos":     15/1440,
+            "Últimos 30 minutos":     30/1440,
+            "Última hora":            1/24,
+            "Últimas 6 horas":        6/24,
             "Últimas 24 horas":       1,
+            "Hoy":                    1,
+            "Esta semana":            7,
             "Últimos 7 días":         7,
             "Últimos 30 días":        30,
+            "Últimos 90 días":        90,
+            "Último año":             365,
             "Todo el histórico":      9999,
             "📅 Rango personalizado": 0,
         }
-        filtro_rango = st.selectbox("🕐 Período", list(rango_opciones.keys()), index=3, key="hist_rango")
+        filtro_rango = st.selectbox("🕐 Período", list(rango_opciones.keys()), index=4, key="hist_rango")
     with fc2:
         filtro_op = st.selectbox("🏢 Operador", ["Todos", "CLARO", "ETB"], key="hist_op")
     with fc3:

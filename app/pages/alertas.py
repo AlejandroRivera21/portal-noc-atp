@@ -1,4 +1,4 @@
-"""
+﻿"""
 pages/alertas.py
 Panel de Alertas & Monitoreo — motor de detección + acciones Teams/JIRA
 NUEVO: Monitor de timeouts 24/7 — alerta si 3+ timeouts en 30 min
@@ -623,9 +623,11 @@ def render():
     with c_rango:
         rango_label = st.selectbox(
             "🕐 Ventana de análisis",
-            ["Última hora", "Últimas 6 horas", "Últimas 24 horas",
-             "Últimos 7 días", "📅 Rango personalizado"],
-            index=2, key="al_rango")
+            ["Últimos 15 minutos", "Últimos 30 minutos", "Última hora",
+             "Últimas 6 horas", "Últimas 24 horas", "Hoy", "Esta semana",
+             "Últimos 7 días", "Últimos 30 días", "Últimos 90 días",
+             "Último año", "📅 Rango personalizado"],
+            index=4, key="al_rango")
     with c_fuente:
         fuente = st.radio("Fuente", ["🔌 En vivo", "📂 CSV"], key="al_fuente", horizontal=True)
 
@@ -679,8 +681,13 @@ def render():
     rango_map = {
         "Última hora":      "now-1h",
         "Últimas 6 horas":  "now-6h",
-        "Últimas 24 horas": "now-24h",
-        "Últimos 7 días":   "now-7d",
+        "Últimas 24 horas":   "now-24h",
+        "Hoy":                "today",
+        "Esta semana":        "week",
+        "Últimos 7 días":     "now-7d",
+        "Últimos 30 días":    "now-30d",
+        "Últimos 90 días":    "now-90d",
+        "Último año":         "now-1y",
     }
 
     st.markdown("<div style='margin-top:10px;'>", unsafe_allow_html=True)

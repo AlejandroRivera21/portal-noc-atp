@@ -1,4 +1,20 @@
 ﻿fecha_deteccion;fecha_timeout;operador;proceso;codigo;descripcion;rango_consulta;time_taken_ms;status;status_code
+2026-05-12 15:24:25;2026-05-12 15:21:07;CLARO;Activación Servicios;TIMEOUT_38340ms;Timeout: 38,340ms;now-7d;38340;;
+2026-05-12 15:19:14;2026-05-12 14:34:59;CLARO;Cambio ONT;TIMEOUT_32282ms;Timeout: 32,282ms;now-7d;32282;;
+2026-05-12 15:19:14;2026-05-12 14:34:59;CLARO;Cambio ONT;TIMEOUT_32780ms;Timeout: 32,780ms;now-7d;32780;;
+2026-05-12 14:16:56;2026-05-12 13:59:15;CLARO;Activación Servicios;TIMEOUT_34529ms;Timeout: 34,529ms;today;34529;;
+2026-05-12 14:16:56;2026-05-12 13:59:15;CLARO;Activación Servicios;TIMEOUT_33818ms;Timeout: 33,818ms;today;33818;;
+2026-05-12 14:16:56;2026-05-12 12:37:59;CLARO;Activación Servicios;TIMEOUT_37955ms;Timeout: 37,955ms;today;37955;;
+2026-05-12 14:16:56;2026-05-12 12:11:04;CLARO;Activación Servicios;TIMEOUT_31705ms;Timeout: 31,705ms;today;31705;;
+2026-05-12 14:16:56;2026-05-12 11:56:53;CLARO;Cambio ONT;TIMEOUT_38084ms;Timeout: 38,084ms;today;38084;;
+2026-05-12 14:16:56;2026-05-12 11:56:52;CLARO;Cambio ONT;TIMEOUT_38619ms;Timeout: 38,619ms;today;38619;;
+2026-05-12 11:42:50;2026-05-12 10:28:39;CLARO;Activación Servicios;TIMEOUT_31485ms;Timeout: 31,485ms;now-7d;31485;;
+2026-05-12 11:42:50;2026-05-12 10:25:17;CLARO;Cambio ONT;TIMEOUT_34428ms;Timeout: 34,428ms;now-7d;34428;;
+2026-05-12 11:42:50;2026-05-12 10:25:16;CLARO;Cambio ONT;TIMEOUT_34981ms;Timeout: 34,981ms;now-7d;34981;;
+2026-05-12 11:42:50;2026-05-12 10:04:20;CLARO;Activación Servicios;TIMEOUT_36321ms;Timeout: 36,321ms;now-7d;36321;;
+2026-05-12 11:42:50;2026-05-12 09:57:42;CLARO;Activación Servicios;TIMEOUT_32837ms;Timeout: 32,837ms;now-7d;32837;;
+2026-05-12 11:42:50;2026-05-12 09:28:00;CLARO;Activación Servicios;TIMEOUT_33253ms;Timeout: 33,253ms;now-7d;33253;;
+2026-05-12 11:42:50;2026-05-12 09:27:52;CLARO;Activación Servicios;TIMEOUT_35516ms;Timeout: 35,516ms;now-7d;35516;;
 2026-05-11 16:44:42;2026-05-11 16:34:11;CLARO;Activación Servicios;TIMEOUT_32265ms;Timeout: 32,265ms;now-7d;32265;;
 2026-05-11 16:25:06;2026-05-11 16:16:33;CLARO;Activación Servicios;TIMEOUT_33099ms;Timeout: 33,099ms;now-7d;33099;;
 2026-05-11 15:50:16;2026-05-11 15:37:34;CLARO;Activación Servicios;TIMEOUT_34837ms;Respuesta lenta: 34,837 ms (>30s);Importación histórica;34837;SUCCESS;200.0

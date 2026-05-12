@@ -1,4 +1,4 @@
-"""
+﻿"""
 pages/dashboard.py
 Dashboard de KPIs — Vista 3 columnas igual a Kibana (VNO+CLARO / CLARO / ETB)
 Sincronización en paralelo con Elasticsearch.
@@ -11,7 +11,7 @@ import plotly.express as px
 import os
 import time
 import concurrent.futures
-from datetime import datetime, date, timedelta
+from datetime import datetime, date, timedelta, timezone
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -266,8 +266,12 @@ def render():
                                      value=datetime.strptime("23:59", "%H:%M").time(),
                                      key="db_hora_fin")
 
-        fecha_ini_iso = f"{fecha_ini}T{hora_ini.strftime('%H:%M:%S')}.000Z"
-        fecha_fin_iso = f"{fecha_fin}T{hora_fin.strftime('%H:%M:%S')}.000Z"
+        _TZ_BOGOTA    = timezone(timedelta(hours=-5))
+        _dt_ini       = datetime.combine(fecha_ini, hora_ini).replace(tzinfo=_TZ_BOGOTA)
+        _dt_fin       = datetime.combine(fecha_fin, hora_fin).replace(tzinfo=_TZ_BOGOTA)
+        fecha_ini_iso = _dt_ini.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        fecha_fin_iso = _dt_fin.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        st.caption("Hora Colombia (UTC-5). El portal convierte a UTC automaticamente.")
 
     st.markdown("---")
 
@@ -284,7 +288,10 @@ def render():
             btn_sync = st.button("🔄 Sincronizar ahora", type="primary", key="db_sync")
         with col_estado:
             if "last_sync" in st.session_state:
-                st.caption(f"Última sincronización: {st.session_state.last_sync}")
+                st.markdown(
+                    f"<div style='padding-top:8px;font-size:13px;color:#888;'>"
+                    f"🕐 Última sincronización: <b>{st.session_state.last_sync}</b></div>",
+                    unsafe_allow_html=True)
 
         rango_cache = st.session_state.get("db_rango_cache", "")
         vista_cache = st.session_state.get("db_vista_cache", "")

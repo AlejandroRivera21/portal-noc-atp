@@ -1,4 +1,4 @@
-"""
+﻿"""
 modules/styles.py
 CSS global + sidebar compartido para TODAS las paginas del Portal NOC ATP.
 
@@ -77,6 +77,16 @@ def aplicar_estilos():
         padding: 12px 16px;
         border: 0.5px solid #e0e0e0;
     }
+    [data-testid="stSidebar"] [data-testid="baseButton-primary"] {
+        background: rgba(220,38,38,0.12) !important;
+        border: 1px solid rgba(220,38,38,0.45) !important;
+        color: #f87171 !important;
+    }
+    [data-testid="stSidebar"] [data-testid="baseButton-primary"]:hover {
+        background: rgba(220,38,38,0.28) !important;
+        border-color: rgba(220,38,38,0.7) !important;
+        color: #fca5a5 !important;
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -94,7 +104,7 @@ def sidebar_comun(mostrar_timeouts=False):
 
     with st.sidebar:
         # ── Logo ATP con fondo azul oscuro ───────────────────────
-        logo_path = os.path.join(os.path.dirname(__file__), "..", "ATP_logo.png")
+        logo_path = os.path.join(os.path.dirname(__file__), "..", "assets", "ATPLOGIN.png")
         st.markdown(
             "<div style='background:#1a1a2e;border-radius:10px;"
             "padding:10px 8px;margin-bottom:4px;text-align:center;'>",
@@ -186,7 +196,33 @@ def sidebar_comun(mostrar_timeouts=False):
             )
 
         st.markdown(
-            "<br><div style='font-size:9px;color:rgba(255,255,255,0.2);text-align:center;'>"
-            "Portal NOC v1.0 · Gerencia Fibra</div>",
+            "<hr style='border-color:rgba(255,255,255,0.08);margin:16px 0 10px;'>",
+            unsafe_allow_html=True
+        )
+
+        u   = st.session_state.get("nombre", st.session_state.get("usuario", ""))
+        r   = st.session_state.get("rol", "")
+        ini = "".join([w[0].upper() for w in u.replace("_", " ").split()[:2]]) if u else "?"
+
+        st.markdown(
+            f"<div style='display:flex;align-items:center;gap:10px;padding:4px 2px 8px;'>"
+            f"<div style='width:34px;height:34px;border-radius:50%;"
+            f"background:rgba(220,38,38,0.15);border:1px solid rgba(220,38,38,0.3);"
+            f"display:flex;align-items:center;justify-content:center;"
+            f"font-size:13px;font-weight:700;color:#ef4444;flex-shrink:0;'>{ini}</div>"
+            f"<div>"
+            f"<div style='font-size:12px;font-weight:600;color:rgba(255,255,255,0.85);'>{u}</div>"
+            f"<div style='font-size:10px;color:rgba(255,255,255,0.3);letter-spacing:0.5px;'>{r}</div>"
+            f"</div></div>",
+            unsafe_allow_html=True
+        )
+        if st.button("⏻  Cerrar sesion", use_container_width=True, key="nav_logout", type="primary"):
+            for k in ["autenticado", "usuario", "nombre", "rol", "user_id"]:
+                st.session_state.pop(k, None)
+            st.rerun()
+
+        st.markdown(
+            "<div style='font-size:9px;color:rgba(255,255,255,0.15);"
+            "text-align:center;margin-top:6px;'>Portal NOC v1.0 · Gerencia Fibra</div>",
             unsafe_allow_html=True
         )

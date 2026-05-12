@@ -1,0 +1,10 @@
+﻿venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.db
+*.bak
+.streamlit/secrets.toml
+data/*.csv
+data/*.xlsx
